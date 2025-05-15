@@ -48,7 +48,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close
         )
         actionBarDrawerToggle.syncState()
-        
+        drawerLayout.addDrawerListener(actionBarDrawerToggle)
+
         val menuIcon: ImageView = findViewById(R.id.toolbarMenu)
         menuIcon.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
@@ -79,7 +80,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
         .setBlurRadius(12f)
         
-        WindowCompat.setDecorFitsSystemWindows(window, false)
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
     view.setPadding(
