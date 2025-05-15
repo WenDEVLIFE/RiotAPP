@@ -70,13 +70,6 @@
          android:layout_width="match_parent"
          android:layout_gravity="bottom">
 
-        <eightbitlab.com.blurview.BlurView
-             android:layout_height="wrap_content"
-             android:layout_width="match_parent"
-             android:id="@+id/blurView" 
-             app:blurOverlayColor="@color/white">
-  </eightbitlab.com.blurview.BlurView>
-
 <com.google.android.material.bottomnavigation.BottomNavigationView
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
