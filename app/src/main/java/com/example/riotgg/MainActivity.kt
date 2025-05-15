@@ -8,17 +8,26 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar // ✅ Import Toolbar
+import androidx.appcompat.widget.Toolbar 
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import android.view.ViewGroup
+
+// BlurView library
+import eightbitlab.com.blurview.BlurView
+import eightbitlab.com.blurview.RenderScriptBlur
+
+// Window insets helpers
+import androidx.core.view.WindowCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var toolbarText: TextView
 
@@ -27,22 +36,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // ✅ Find the Toolbar
         val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar) // ✅ Set Toolbar as ActionBar
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        // Initialize Drawer Layout and Toggle
         drawerLayout = findViewById(R.id.drawer_layout)
-        actionBarDrawerToggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close
-        )
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.syncState()
 
-        // Enable drawer toggle in the toolbar
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeButtonEnabled(true)
+        val menuIcon: ImageView = findViewById(R.id.toolbarMenu)
+        menuIcon.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
 
+        val logoIcon: ImageView = findViewById(R.id.toolbarLogo)
+        logoIcon.setOnClickListener {
+            Toast.makeText(this, "Logo clicked", Toast.LENGTH_SHORT).show()
+        }
         // Initialize Bottom Navigation and Toolbar Text
         bottomNavigationView = findViewById(R.id.bottomNavigationView)
 
@@ -52,7 +60,31 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         // Set default fragment
         setCurrentFragment(FirstFragment())
+        
+        val rootView = findViewById<ViewGroup>(R.id.main)
 
+    val blurView = findViewById<BlurView>(R.id.blurView)
+
+    // We use the window background as the frame-clear, so nothing peek‑through flickers
+    val windowBackground = window.decorView.background
+
+    blurView.setupWith(rootView)
+        .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
+        .setBlurAlgorithm(RenderScriptBlur(this))     // the blur engine
+        .setBlurRadius(12f)                           // how strong the blur
+        .setHasFixedTransformationMatrix(true)
+        
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
+    val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+    view.setPadding(
+        view.paddingLeft,
+        view.paddingTop,
+        view.paddingRight,
+        navInsets.bottom
+    )
+    insets
+}
         // Handle Bottom Navigation Clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -68,6 +100,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             true
         }
+        
+        
+
     }
 
     // Handle Side Navigation Clicks

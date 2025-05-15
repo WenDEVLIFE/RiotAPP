@@ -1,391 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FirstFragment"
-    android:background="@color/white">
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/bg"
+     tools:context=".FirstFragment">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:fillViewport="true">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:fontFamily="@font/altonetrialregfont"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="0dp"
-                android:text="OUR VALUES"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/altonetrialregfont"
+                 android:textSize="13dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginStart="0dp"
+                 android:layout_gravity="center"
+                 android:text="OUR VALUES" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/riotred"
-                android:fontFamily="@font/boldonseregfont"
-                android:textSize="25dp"
-                android:layout_gravity="center"
-                android:text="@string/firstfrag_oneriot"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/boldonseregfont"
+                 android:textSize="25dp"
+                 android:textColor="@color/riotred"
+                 android:layout_gravity="center"
+                 android:text="@string/firstfrag_oneriot" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="399dp"
-                android:layout_height="190dp"
-                android:layout_marginStart="0sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitXY">
+                 android:layout_height="190dp"
+                 android:layout_width="399dp"
+                 android:layout_marginBottom="20dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginStart="0sp">
 
                 <com.denzcoskun.imageslider.ImageSlider
-                    android:id="@+id/imageslider1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/imageslider1" />
+
             </androidx.cardview.widget.CardView>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/wildapo"
-                android:layout_marginTop="16dp" />
+                 android:layout_height="1dp"
+                 android:layout_width="match_parent"
+                 android:background="@color/wildapo"
+                 android:layout_marginTop="16dp" />
 
             <LinearLayout
-                android:layout_marginTop="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="30dp"
+                 android:layout_gravity="center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/valorantfont"
-                    android:text="VALORANT "
-                    android:textSize="30dp"
-                    android:textColor="@color/riotred"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/valorantfont"
+                     android:textSize="30dp"
+                     android:textColor="@color/riotred"
+                     android:layout_gravity="center_horizontal"
+                     android:text="VALORANT " />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/heavitasfont"
-                    android:layout_gravity="center_horizontal"
-                    android:text="PATCH NOTES"
-                    android:textSize="15dp"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/heavitasfont"
+                     android:textSize="15dp"
+                     android:textColor="@color/black"
+                     android:layout_gravity="center_horizontal"
+                     android:text="PATCH NOTES" />
 
             </LinearLayout>
 
-
-
             <androidx.cardview.widget.CardView
-                android:layout_width="399dp"
-                android:layout_height="190dp"
-                android:layout_marginStart="0sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitXY">
+                 android:layout_height="190dp"
+                 android:layout_width="399dp"
+                 android:layout_marginBottom="20dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginStart="0sp">
 
                 <com.denzcoskun.imageslider.ImageSlider
-                    android:id="@+id/imageslider2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/imageslider2" />
+
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/valorantfont"
-                    android:text="@string/valo3_patchtitle"
-                    android:textColor="@color/riotred"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/valorantfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/riotred"
+                     android:text="@string/valo3_patchtitle" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:text="@string/valo3_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/bebasneuefont"
+                     android:textColor="@color/black"
+                     android:text="@string/valo3_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valo3_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:text="@string/valo3_bodytitle" />
 
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="end"
-                >
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp"
+                 android:layout_gravity="end">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/valorantfont"
-                    android:text="@string/valo2_patchtitle"
-                    android:textColor="@color/azul"
-                    />
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/valorantfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/azul"
+                     android:text="@string/valo2_patchtitle" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:text="@string/valo2_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/bebasneuefont"
+                     android:textColor="@color/black"
+                     android:text="@string/valo2_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_gravity="end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valo2_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"
-                android:layout_marginBottom="15dp"
-                />
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="15dp"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:layout_gravity="end"
+                 android:text="@string/valo2_bodytitle" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/valorantfont"
-                    android:text="@string/valo_patchtitle"
-                    android:textColor="@color/riotred"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/valorantfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/riotred"
+                     android:text="@string/valo_patchtitle" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:text="@string/valo_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/bebasneuefont"
+                     android:textColor="@color/black"
+                     android:text="@string/valo_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valo_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
-
-
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:text="@string/valo_bodytitle" />
 
             <Button
-                android:id="@+id/valoButton"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="See VALORANT"
-                android:textSize="20dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="20dp"
-                android:backgroundTint="@color/wildapo"
-                android:textColor="@color/black"
-                android:fontFamily="@font/valorantfont"
-                />
+                 android:layout_height="40dp"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="20dp"
+                 android:textSize="20dp"
+                 android:fontFamily="@font/valorantfont"
+                 android:backgroundTint="@color/wildapo"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="15dp"
+                 android:id="@+id/valoButton"
+                 android:text="See VALORANT"
+                 android:layout_gravity="center" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/blue3"
-                android:layout_marginTop="16dp" />
-
-
-            <!--LEAGUE OF LEGENDS PARTS -->
+                 android:layout_height="1dp"
+                 android:layout_width="match_parent"
+                 android:background="@color/blue3"
+                 android:layout_marginTop="16dp" />
 
             <LinearLayout
-                android:layout_marginTop="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center_horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="30dp"
+                 android:layout_gravity="center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/beaufortboldfont"
-                    android:text="LEAGUE OF LEGENDS "
-                    android:textSize="30dp"
-                    android:textColor="@color/gold4"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortboldfont"
+                     android:textSize="30dp"
+                     android:textColor="@color/gold4"
+                     android:layout_gravity="center_horizontal"
+                     android:text="LEAGUE OF LEGENDS " />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/heavitasfont"
-                    android:layout_gravity="center_horizontal"
-                    android:text="PATCH NOTES"
-                    android:textSize="15dp"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/heavitasfont"
+                     android:textSize="15dp"
+                     android:textColor="@color/black"
+                     android:layout_gravity="center_horizontal"
+                     android:text="PATCH NOTES" />
 
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="399dp"
-                android:layout_height="190dp"
-                android:layout_marginStart="0sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitXY">
+                 android:layout_height="190dp"
+                 android:layout_width="399dp"
+                 android:layout_marginBottom="20dp"
+                 android:scaleType="fitXY"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginStart="0sp">
 
                 <com.denzcoskun.imageslider.ImageSlider
-                    android:id="@+id/imageslider3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/imageslider3" />
+
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/beaufortboldfont"
-                    android:text="ESPORTS  "
-                    android:textColor="@color/gold4"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortboldfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/gold4"
+                     android:text="ESPORTS  " />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/beaufortregfont"
-                    android:text="@string/league_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortregfont"
+                     android:textColor="@color/black"
+                     android:text="@string/league_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/league_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:text="@string/league_bodytitle" />
 
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="end"
-                >
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp"
+                 android:layout_gravity="end">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/beaufortboldfont"
-                    android:text="MEDIA  "
-                    android:textColor="@color/blue3"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortboldfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/blue3"
+                     android:text="MEDIA  " />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/beaufortregfont"
-                    android:text="@string/league2_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortregfont"
+                     android:textColor="@color/black"
+                     android:text="@string/league2_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/league2_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"
-                android:layout_gravity="end"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:text="@string/league2_bodytitle"
+                 android:layout_gravity="end" />
 
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="20dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/beaufortboldfont"
-                    android:text="MEDIA  "
-                    android:textColor="@color/gold4"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortboldfont"
+                     android:layout_marginLeft="20dp"
+                     android:textColor="@color/gold4"
+                     android:text="MEDIA  " />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/beaufortregfont"
-                    android:text="@string/league3_patchtitledate"
-                    android:textColor="@color/black"/>
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:fontFamily="@font/beaufortregfont"
+                     android:textColor="@color/black"
+                     android:text="@string/league3_patchtitledate" />
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/league3_bodytitle"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/bebasneuefont"
-                android:textSize="25dp"
-                android:textColor="@color/black"/>
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/bebasneuefont"
+                 android:textSize="25dp"
+                 android:layout_marginLeft="20dp"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="5dp"
+                 android:text="@string/league3_bodytitle" />
 
             <Button
-                android:id="@+id/leagueButton"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:text="See League of Legends"
-                android:textSize="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/beaufortboldfont"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/gold4"
-                />
+                 android:layout_height="45dp"
+                 android:layout_width="wrap_content"
+                 android:textSize="15dp"
+                 android:fontFamily="@font/beaufortboldfont"
+                 android:backgroundTint="@color/gold4"
+                 android:textColor="@color/black"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/leagueButton"
+                 android:text="See League of Legends"
+                 android:layout_gravity="center" />
 
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

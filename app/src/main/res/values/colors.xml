@@ -8,7 +8,8 @@
     <color name="grayishblack">#2D2D2D</color>
     <color name="black">#000000</color>
     <color name="whitishgray">#D3D3D3</color>
-    <color name="gray">#d9d9d9</color>
+    <color name="gray">#2C2B32</color>
+    <color name="bg">#2C2B32</color>
 
     <!--valorant-->
     <color name="wildapo">#fd4556</color>
