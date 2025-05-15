@@ -78,7 +78,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
         .setBlurRadius(12f)
-        .setOutlineProvider(ViewOutlineProvider.BACKGROUND)
         .setClipToOutline(true)                         // how strong the blur
         .setHasFixedTransformationMatrix(true)
         
