@@ -74,14 +74,14 @@
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
              android:id="@+id/blurView" 
-             app:blurOverlayColor="@color/colorOverlay">
+             app:blurOverlayColor="@color/white">
 
        <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
-             android:background="@drawable/bg_glass_inset"
+             android:background="@drawable/bg_glass_insets"
              app:menu="@menu/bottom_nav_menu"
              android:paddingBottom="4dp"
              android:id="@+id/bottomNavigationView"
