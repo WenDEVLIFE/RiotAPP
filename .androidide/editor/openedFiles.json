@@ -35,13 +35,13 @@
       "selection": {
         "end": {
           "column": 8,
-          "index": 2897,
-          "line": 75
+          "index": 1943,
+          "line": 50
         },
         "start": {
           "column": 8,
-          "index": 2325,
-          "line": 63
+          "index": 1943,
+          "line": 50
         }
       }
     },
@@ -76,5 +76,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
 }

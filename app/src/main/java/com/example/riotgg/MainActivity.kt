@@ -15,7 +15,9 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import android.view.ViewGroup
-
+import android.widget.ImageView
+import android.widget.Toast
+import android.view.ViewOutlineProvider
 // BlurView library
 import eightbitlab.com.blurview.BlurView
 import eightbitlab.com.blurview.RenderScriptBlur
@@ -30,7 +32,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var toolbarText: TextView
-
+    private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -41,7 +44,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
         drawerLayout = findViewById(R.id.drawer_layout)
-
+        actionBarDrawerToggle = ActionBarDrawerToggle(
+            this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close
+        )
+        actionBarDrawerToggle.syncState()
+        
         val menuIcon: ImageView = findViewById(R.id.toolbarMenu)
         menuIcon.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
@@ -70,8 +77,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
-        .setBlurAlgorithm(RenderScriptBlur(this))     // the blur engine
-        .setBlurRadius(12f)                           // how strong the blur
+        .setBlurRadius(12f)
+        .setOutlineProvider(ViewOutlineProvider.BACKGROUND);
+        .setClipToOutline(true);                           // how strong the blur
         .setHasFixedTransformationMatrix(true)
         
         WindowCompat.setDecorFitsSystemWindows(window, false)
