@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/settings.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 17,
+          "index": 512,
+          "line": 19
+        },
+        "start": {
+          "column": 17,
+          "index": 512,
+          "line": 19
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/settings.gradle.kts"
+}
