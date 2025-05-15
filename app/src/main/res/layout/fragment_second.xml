@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/riotbgwallpapervalo1"
+    android:id="@+id/secondFragment"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/valologo"/>
+
+            <!--duelist title-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/riotred"
+                >
+
+                <ImageView
+                    android:id="@+id/duelisticon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/duelisticon"
+
+                    />
+
+                <TextView
+                    android:id="@+id/duelLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:text="DUELIST"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+
+            <!--duelist-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/jettcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jettcard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/neoncard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/neoncard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/reynacard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/reynacard"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--duelist button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+                <android.widget.Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+            </TableRow>
+
+            <!--initiator title-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:background="@color/riotred"
+                >
+
+                <ImageView
+                    android:id="@+id/initiatoricon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/initiatoricon"
+                    />
+
+                <TextView
+                    android:id="@+id/iniLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:text="INITIATOR"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    />
+            </TableRow>
+
+            <!--INITIATOR-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/fadecard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fadecard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/kayocard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kayocard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/gekkocard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gekkocard"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--initiator button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+                <android.widget.Button
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+            </TableRow>
+
+            <!--sentinel title-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/riotred"
+                >
+
+                <ImageView
+                    android:id="@+id/sentinelicon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sentinelicon"
+                    />
+
+                <TextView
+                    android:id="@+id/sentiLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:text="SENTINEL"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </TableRow>
+
+            <!--sentinel-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/sagecard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sagecard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/killjoycard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/killjoycard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/cyphercard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cyphercard"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--sentinel button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+                <android.widget.Button
+                    android:id="@+id/button9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+            </TableRow>
+
+            <!--controller title-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:background="@color/riotred"
+                >
+
+                <ImageView
+                    android:id="@+id/controllericon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/controllericon"
+                    />
+
+                <TextView
+                    android:id="@+id/smokeLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:text="CONTROLLER"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    />
+            </TableRow>
+
+            <!--INITIATOR-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/harborcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/harborcard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/vipercard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vipercard"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/astracard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/astracard"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--initiator button-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+
+                <android.widget.Button
+                    android:id="@+id/button12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp"/>
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

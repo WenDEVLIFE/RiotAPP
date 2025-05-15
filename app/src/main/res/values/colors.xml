@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--riot color-->
+    <color name="riotred">#D13639</color>
+    <color name="riotorangered">#F12B15</color>
+    <color name="white">#F0F0F0</color>
+    <color name="grayishblack">#2D2D2D</color>
+    <color name="black">#000000</color>
+    <color name="whitishgray">#D3D3D3</color>
+    <color name="gray">#d9d9d9</color>
+
+    <!--valorant-->
+    <color name="wildapo">#fd4556</color>
+    <color name="azul">#bd3944</color>
+    <color name="blank">#53212b</color>
+    <color name="cupideye">#fffbf5</color>
+    <color name="radiantorchid">#000000</color>
+
+
+
+    <!--league hextech bgold4grazulcolor-->
+    <color name="blue1">#CDFAFA</color>
+    <color name="blue2">#0AC8B9</color>
+    <color name="blue3">#0397AB</color>
+    <color name="blue4">#005A82</color>
+    <color name="blue5">#0A323C</color>
+    <color name="blue6">#091428</color>
+    <color name="blue7">#0A1428</color>
+
+    <color name="gold1">#F0E6D2</color>
+    <color name="gold2">#F0E6D2</color>
+    <color name="gold3">#C8AA6E</color>
+    <color name="gold4">#C89B3C</color>
+    <color name="gold5">#785A28</color>
+    <color name="gold6">#463714</color>
+    <color name="gold7">#32281E</color>
+
+    <color name="gray1">#A09B8C</color>
+    <color name="gray2">#5B5A56</color>
+    <color name="gray3">#3C3C41</color>
+    <color name="gray4">#1E2328</color>
+    <color name="gray5">#1E282D</color>
+    <color name="gray6">#010A13</color>
+</resources>

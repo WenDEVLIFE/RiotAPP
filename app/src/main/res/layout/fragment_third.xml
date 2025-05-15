@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment"
+    android:background="@drawable/riotbgleague1"
+    android:id="@+id/thirdFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/leaguelogo"/>
+
+            <!--TopLane-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray6">
+
+                <ImageView
+                    android:id="@+id/toplaneicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/position_top"/>
+
+                <TextView
+                    android:id="@+id/toplaneLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frizquadrata"
+                    android:text="Top Lane"
+                    android:textColor="@color/gold4"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </TableRow>
+
+            <!--Top Lane Image-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/garen"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/rivencard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/riven"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/dariuscard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/darius"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--top lane button-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Garen"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                     />
+
+                <android.widget.Button
+                    android:id="@+id/button2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Riven"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Darius"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+            </TableRow>
+
+            <!--Assassin Lane -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray6">
+
+                <ImageView
+                    android:id="@+id/jungleicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/position_jungle"/>
+
+                <TextView
+                    android:id="@+id/jungleLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frizquadrata"
+                    android:text="Jungle"
+                    android:textColor="@color/gold4"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </TableRow>
+
+            <!--Assassin Image-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/masteryicard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/masteryi"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/viegocard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/viego"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/nunucard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nunu"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--assassin button-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button4"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Master Yi"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button5"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Viego"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button6"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nunu and Willump"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+            </TableRow>
+
+            <!--Midlane-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray6">
+
+                <ImageView
+                    android:id="@+id/midlaneicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/position_mid"/>
+
+                <TextView
+                    android:id="@+id/midlaneLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frizquadrata"
+                    android:text="Mid Lane"
+                    android:textColor="@color/gold4"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </TableRow>
+
+            <!--Top Lane Image-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/leblancard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leblanc"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/katacard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kata"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/qiyacard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qiyanna"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--top lane button-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button7"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LeBlanc"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button8"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Katarina"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button9"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Qiyanna"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+            </TableRow>
+
+            <!--ADC-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray6">
+
+                <ImageView
+                    android:id="@+id/adcicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/position_bottom"/>
+
+                <TextView
+                    android:id="@+id/adcLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frizquadrata"
+                    android:text="ADC"
+                    android:textColor="@color/gold4"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </TableRow>
+
+            <!--Top Lane Image-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/jinxcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jinx"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/missforcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mf"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/kaisacard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kaisa"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--top lane button-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button10"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jinx"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button12"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Miss Fortune"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button13"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kai'sa"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+            </TableRow>
+
+            <!--Support-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/gray6">
+
+                <ImageView
+                    android:id="@+id/suppicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/position_support"/>
+
+                <TextView
+                    android:id="@+id/suppLBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frizquadrata"
+                    android:text="Support"
+                    android:textColor="@color/gold4"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </TableRow>
+
+            <!--Top Lane Image-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/blitzcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/blitz"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/renatacard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/renata"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:id="@+id/yuumicard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/yuumi"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+
+            <!--top lane button-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button14"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Blitzcrank"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button15"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Renata Glasc"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/button16"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yuumi"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                    />
+
+            </TableRow>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

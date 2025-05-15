@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Riot GG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstfrag_latest">Riot Games</string>
+    <string name="firstfrag_valo">Valorant Updates</string>
+    <string name="firstfrag_league">League of Legends Updates</string>
+
+    <string name="firstfrag_patchtitle">OUR VALUES</string>
+    <string name="firstfrag_oneriot">WE ARE ONE RIOT</string>
+    <string name="firstfrag_patchbody1">We are player-led, not product led. We collaborate across</string>
+    <string name="firstfrag_patchbody2">teams and around the world to create uniquely</string>
+    <string name="firstfrag_patchbody3">Riot experiences that exceed the sum of their parts.</string>
+
+    <string name="valo_patchtitle">COMMUNITY </string>
+    <string name="valo_patchtitledate">| March 28, 2025</string>
+    <string name="valo_bodytitle">A Spectrum of Colors: Waylay in Game</string>
+
+    <string name="valo2_patchtitle">ESPORTS </string>
+    <string name="valo2_patchtitledate">| March 21, 2025</string>
+    <string name="valo2_bodytitle">VCT Americas 2025 Stage 1</string>
+
+    <string name="valo3_patchtitle">ESPORTS </string>
+    <string name="valo3_patchtitledate"> | March 20, 2025</string>
+    <string name="valo3_bodytitle">Pros Make Player Tier Lists</string>
+
+    <string name="league_patchtitle">ESPORTS </string>
+    <string name="league_patchtitledate">| March 27, 2025</string>
+    <string name="league_bodytitle">LTA North Split 2 Primer</string>
+
+    <string name="league2_patchtitle">MEDIA </string>
+    <string name="league2_patchtitledate"> | March 22, 2025</string>
+    <string name="league2_bodytitle">Special Report for Chibi Janna!</string>
+
+    <string name="league3_patchtitle">MEDIA </string>
+    <string name="league3_patchtitledate"> | March 21, 2025</string>
+    <string name="league3_bodytitle">Ma Meilleure Ennemie Official MV!</string>
+
+    <string name="fragtwo_button">See Guide</string>
+
+    <string name="valotitle">VALORANT</string>
+    <string name="leaguetitle">LEAGUE OF LEGENDS</string>
+
+    <string name="league_button">Select Champion</string>
+
+    <string name="app">Navigation Drawer</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+
+</resources>
