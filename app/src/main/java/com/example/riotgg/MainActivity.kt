@@ -78,7 +78,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
         .setBlurRadius(12f)
-        .setHasFixedTransformationMatrix(true)
         
         WindowCompat.setDecorFitsSystemWindows(window, false)
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
