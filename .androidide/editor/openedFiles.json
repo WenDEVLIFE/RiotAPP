@@ -64,14 +64,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/colors.xml",
       "selection": {
         "end": {
-          "column": 28,
-          "index": 80,
-          "line": 3
+          "column": 11,
+          "index": 50,
+          "line": 1
         },
         "start": {
-          "column": 28,
-          "index": 80,
-          "line": 3
+          "column": 11,
+          "index": 50,
+          "line": 1
         }
       }
     }
