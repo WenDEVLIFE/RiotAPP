@@ -73,7 +73,10 @@
         <eightbitlab.com.blurview.BlurView
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
-             android:id="@+id/blurView" />
+             android:id="@+id/blurView" 
+             app:blurOverlayColor="@color/colorOverlay">
+
+       <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
              android:layout_height="wrap_content"
@@ -83,6 +86,9 @@
              android:paddingBottom="4dp"
              android:id="@+id/bottomNavigationView"
              android:paddingTop="4dp" />
+             
+  </eightbitlab.com.blurview.BlurView>
+
 
     </FrameLayout>
 

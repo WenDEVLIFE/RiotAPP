@@ -4,14 +4,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/build.gradle.kts",
       "selection": {
         "end": {
-          "column": 55,
-          "index": 2241,
-          "line": 72
+          "column": 4,
+          "index": 2185,
+          "line": 71
         },
         "start": {
-          "column": 55,
-          "index": 2241,
-          "line": 72
+          "column": 4,
+          "index": 2185,
+          "line": 71
         }
       }
     },
@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 3266,
+          "column": 37,
+          "index": 3387,
           "line": 87
         },
         "start": {
-          "column": 4,
-          "index": 2500,
-          "line": 67
+          "column": 13,
+          "index": 3363,
+          "line": 87
         }
       }
     },
@@ -44,7 +44,22 @@
           "line": 63
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/settings.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 22,
+          "index": 476,
+          "line": 17
+        },
+        "start": {
+          "column": 22,
+          "index": 476,
+          "line": 17
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/settings.gradle.kts"
 }
