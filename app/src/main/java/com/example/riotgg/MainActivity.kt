@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
-        .setBlurRadius(12f)
+        .setBlurRadius(65f)
         
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
