@@ -14,7 +14,37 @@
           "line": 105
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 2380,
+          "line": 68
+        },
+        "start": {
+          "column": 0,
+          "index": 2380,
+          "line": 68
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_first.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 3119,
+          "line": 75
+        },
+        "start": {
+          "column": 12,
+          "index": 2695,
+          "line": 66
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml"
 }
