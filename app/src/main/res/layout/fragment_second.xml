@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/riotbgwallpapervalo1"
@@ -66,35 +67,35 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
-<com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/jettcard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/jettcard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/jettcard"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    android:layout_margin="8dp"
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
 
-<com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/neoncard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/neoncard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/neoncard"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-                    
-                    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/reynacard"
+                    android:layout_margin="8dp"
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/reynacard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -102,9 +103,9 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/reynacard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- duelist button -->
@@ -226,22 +227,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/fadecard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/fadecard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fadecard"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    android:layout_margin="8dp"
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
 
-<com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/kayocard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/kayocard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -249,12 +250,12 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kayocard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-        
-                    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/gekkocard"
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/gekkocard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -262,9 +263,9 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/gekkocard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- initiator button -->
@@ -382,8 +383,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
-  <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/sagecard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/sagecard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -391,12 +392,12 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/sagecard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
-  <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/killjoycard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/killjoycard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -404,12 +405,12 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/killjoycard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
-                      <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/cyphercard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/cyphercard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -417,9 +418,9 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/cyphercard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- sentinel button -->
@@ -541,22 +542,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/harborcard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/harborcard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/harborcard"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    android:layout_margin="8dp"
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/vipercard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/vipercard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -564,13 +565,13 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/vipercard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
 
-                    
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/astracard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/astracard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -578,9 +579,9 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/astracard"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- initiator button -->
