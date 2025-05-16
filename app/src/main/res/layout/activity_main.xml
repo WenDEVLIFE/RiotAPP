@@ -72,7 +72,7 @@
     android:layout_gravity="bottom"
     android:background="@color/gray5"
     app:menu="@menu/bottom_nav_menu"
-    app:enableItemSelectionIndicator="false"
+    app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
     app:itemRippleColor="@android:color/transparent"
     app:itemIconTint="@color/bottom_nav_icon_tint"
     app:itemTextColor="@color/bottom_nav_text_tint" />

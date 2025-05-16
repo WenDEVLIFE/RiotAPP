@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.RiotGG" parent="Base.Theme.RiotGG" />
+    
+    <style name="App.RIOTGG.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+    <item name="android:color">@color/transparent</item>  
+    </style>
 </resources>

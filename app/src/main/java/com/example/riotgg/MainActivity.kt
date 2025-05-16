@@ -48,10 +48,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     Toast.LENGTH_LONG
                 ).show()
             }
-            // give the default handler a chance to do its thing (e.g. show system dialog)
+            
             defaultHandler?.uncaughtException(thread, throwable)
         }
         
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        window.statusBarColor = android.graphics.Color.TRANSPARENT
+        window.navigationBarColor = android.graphics.Color.TRANSPARENT
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
