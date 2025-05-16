@@ -37,7 +37,8 @@
     <string name="league3_bodytitle">Ma Meilleure Ennemie Official MV!</string>
 
     <string name="fragtwo_button">See Guide</string>
-    <string name="fragtwo_save_button">Save Guide</string>
+    <string name="fragtwo_save_button">Save</string>
+    <string name="fragtwo_deletesave_button">Delete Save</string>
 
     <string name="valotitle">VALORANT</string>
     <string name="leaguetitle">LEAGUE OF LEGENDS</string>

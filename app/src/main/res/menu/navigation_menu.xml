@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="HardcodedText">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/nav_home"
-        android:title="Home"/>
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_save_guides"
+            android:title="Save Guides" />
+    </group>
 
-    <item
-        android:id="@+id/nav_valorant"
-        android:title="Valorant"/>
+    <!-- Divider -->
+    <group android:id="@+id/divider_group" android:checkableBehavior="none" android:title="">
+    </group>
 
-    <item
-        android:id="@+id/nav_league"
-        android:title="League of Legends"/>
-
-    <item
-        android:id="@+id/nav_exit"
-        android:title="Exit to App"/>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_valorant"
+            android:title="Valorant" />
+        <item
+            android:id="@+id/nav_league"
+            android:title="League of Legends" />
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Exit to App" />
+    </group>
 </menu>

@@ -31,6 +31,10 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+import android.content.Intent
+
+import com.example.riotgg.Guide.*
+
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawerLayout: DrawerLayout
@@ -125,20 +129,27 @@ insetsController?.isAppearanceLightNavigationBars = true
 
         // Handle Bottom Navigation Clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home -> {
-                    setCurrentFragment(FirstFragment())
-                }
-                R.id.valorant -> {
-                    setCurrentFragment(SecondFragment())
-                }
-                R.id.leagueoflegends -> {
-                    setCurrentFragment(ThirdFragment())
-                }
-            }
-            true
+    when (item.itemId) {
+        R.id.home -> {
+            setCurrentFragment(FirstFragment())
         }
-        
+        R.id.valorant -> {
+            setCurrentFragment(SecondFragment())
+        }
+        R.id.leagueoflegends -> {
+            setCurrentFragment(ThirdFragment())
+        }
+        R.id.save_guides -> {
+            // Launch SavedGuidesActivity
+            val intent = Intent(this, SavedGuidesActivity::class.java)
+            startActivity(intent)
+            
+            // Immediately select Home tab so after returning, Home is shown
+            bottomNavigationView.selectedItemId = R.id.home
+        }
+    }
+    true
+}
         
 
     }
