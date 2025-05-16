@@ -70,17 +70,19 @@ class SavedGuidesActivity : AppCompatActivity() {
 
         val gestureDetector = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
             override fun onFling(
-                e1: MotionEvent?, e2: MotionEvent?,
-                velocityX: Float, velocityY: Float
-            ): Boolean {
-                if (e1 != null && e2 != null && (e1.x - e2.x) > 100) {
-                    val position = listView.pointToPosition(e1.x.toInt(), e1.y.toInt())
-                    if (position != AdapterView.INVALID_POSITION) {
-                        confirmDelete(position)
-                    }
-                }
-                return false
-            }
+    e1: MotionEvent,
+    e2: MotionEvent,
+    velocityX: Float,
+    velocityY: Float
+): Boolean {
+    if ((e1.x - e2.x) > 100) {
+        val position = listView.pointToPosition(e1.x.toInt(), e1.y.toInt())
+        if (position != AdapterView.INVALID_POSITION) {
+            confirmDelete(position)
+        }
+    }
+    return true
+}
         })
 
         listView.setOnTouchListener { _, event ->

@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.app.AlertDialog
-
+import android.widget.Toast
 import com.example.riotgg.db.*
 
 class SecondFragment : Fragment() {

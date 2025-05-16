@@ -5,13 +5,13 @@
       "selection": {
         "end": {
           "column": 27,
-          "index": 290,
-          "line": 10
+          "index": 321,
+          "line": 11
         },
         "start": {
           "column": 27,
-          "index": 290,
-          "line": 10
+          "index": 321,
+          "line": 11
         }
       }
     },
@@ -64,14 +64,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt",
       "selection": {
         "end": {
-          "column": 10,
-          "index": 2877,
-          "line": 83
+          "column": 1,
+          "index": 2711,
+          "line": 84
         },
         "start": {
-          "column": 8,
-          "index": 2250,
-          "line": 70
+          "column": 1,
+          "index": 2711,
+          "line": 84
         }
       }
     },
@@ -196,5 +196,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/layout_savedguides.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt"
 }
