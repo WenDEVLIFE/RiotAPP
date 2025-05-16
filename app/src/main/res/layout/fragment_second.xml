@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/riotbgwallpapervalo1"
     android:id="@+id/secondFragment"
-    >
+>
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        >
+    >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,9 +25,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:src="@drawable/valologo"/>
+                android:src="@drawable/valologo" />
 
-            <!--duelist title-->
+            <!-- duelist title -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -35,7 +36,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/riotred"
-                >
+            >
 
                 <ImageView
                     android:id="@+id/duelisticon"
@@ -44,8 +45,7 @@
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/duelisticon"
-
-                    />
+                />
 
                 <TextView
                     android:id="@+id/duelLBL"
@@ -56,10 +56,10 @@
                     android:textColor="@color/white"
                     android:textSize="30dp"
                     android:layout_marginLeft="10dp"
-                    />
+                />
             </TableRow>
 
-            <!--duelist-->
+            <!-- duelist -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/jettcard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/neoncard"
@@ -84,7 +84,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/neoncard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/reynacard"
@@ -94,97 +94,85 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/reynacard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
             </TableRow>
 
-            <!--duelist button-->
+            <!-- duelist button -->
             <TableRow
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
 
-    <!-- Column 1 -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+                <android.widget.Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_button"
-            android:fontFamily="@font/bebasneuefont" />
-<View
-    android:layout_width="match_parent"
-    android:layout_height="12dp" />
+                <android.widget.Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
-        <Button
-            android:id="@+id/button1_save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_save_button"
-            android:fontFamily="@font/bebasneuefont" />
-    </LinearLayout>
+                <android.widget.Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
-    <!-- Column 2 -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+            </TableRow>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_button"
-            android:fontFamily="@font/bebasneuefont" />
-<View
-    android:layout_width="match_parent"
-    android:layout_height="12dp" />
-        <Button
-            android:id="@+id/button2_save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_save_button"
-            android:fontFamily="@font/bebasneuefont" />
-    </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
 
-    <!-- Column 3 -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+                <android.widget.Button
+                    android:id="@+id/button1save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_button"
-            android:fontFamily="@font/bebasneuefont" />
-<View
-    android:layout_width="match_parent"
-    android:layout_height="12dp" />
-        <Button
-            android:id="@+id/button3_save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fragtwo_save_button"
-            android:fontFamily="@font/bebasneuefont" />
-    </LinearLayout>
-</TableRow>
+                <android.widget.Button
+                    android:id="@+id/button2save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
+                <android.widget.Button
+                    android:id="@+id/button3save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
 
-            <!--initiator title-->
+            </TableRow>
+
+            <!-- initiator title -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -194,7 +182,7 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="right"
                 android:background="@color/riotred"
-                >
+            >
 
                 <ImageView
                     android:id="@+id/initiatoricon"
@@ -203,7 +191,7 @@
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/initiatoricon"
-                    />
+                />
 
                 <TextView
                     android:id="@+id/iniLBL"
@@ -215,10 +203,10 @@
                     android:textSize="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="20dp"
-                    />
+                />
             </TableRow>
 
-            <!--INITIATOR-->
+            <!-- INITIATOR -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -233,7 +221,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fadecard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/kayocard"
@@ -243,7 +231,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/kayocard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/gekkocard"
@@ -253,10 +241,10 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/gekkocard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
             </TableRow>
 
-            <!--initiator button-->
+            <!-- initiator button -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -280,7 +268,7 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
 
                 <android.widget.Button
                     android:id="@+id/button6"
@@ -290,10 +278,46 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
             </TableRow>
 
-            <!--sentinel title-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button4save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button5save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button6save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+            </TableRow>
+
+            <!-- sentinel title -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -302,7 +326,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/riotred"
-                >
+            >
 
                 <ImageView
                     android:id="@+id/sentinelicon"
@@ -311,7 +335,7 @@
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sentinelicon"
-                    />
+                />
 
                 <TextView
                     android:id="@+id/sentiLBL"
@@ -322,10 +346,10 @@
                     android:textColor="@color/white"
                     android:textSize="30dp"
                     android:layout_marginLeft="10dp"
-                    />
+                />
             </TableRow>
 
-            <!--sentinel-->
+            <!-- sentinel -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -340,7 +364,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sagecard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/killjoycard"
@@ -350,7 +374,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/killjoycard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/cyphercard"
@@ -360,10 +384,10 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/cyphercard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
             </TableRow>
 
-            <!--sentinel button-->
+            <!-- sentinel button -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -387,7 +411,7 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
 
                 <android.widget.Button
                     android:id="@+id/button9"
@@ -397,11 +421,48 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
 
             </TableRow>
 
-            <!--controller title-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/button7save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button8save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button9save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+            </TableRow>
+
+            <!-- controller title -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -411,7 +472,7 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="right"
                 android:background="@color/riotred"
-                >
+            >
 
                 <ImageView
                     android:id="@+id/controllericon"
@@ -420,7 +481,7 @@
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/controllericon"
-                    />
+                />
 
                 <TextView
                     android:id="@+id/smokeLBL"
@@ -432,10 +493,10 @@
                     android:textSize="30dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="20dp"
-                    />
+                />
             </TableRow>
 
-            <!--INITIATOR-->
+            <!-- INITIATOR -->
 
             <TableRow
                 android:layout_width="match_parent"
@@ -450,7 +511,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/harborcard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/vipercard"
@@ -460,7 +521,7 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/vipercard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
 
                 <ImageView
                     android:id="@+id/astracard"
@@ -470,10 +531,10 @@
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/astracard"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp" />
             </TableRow>
 
-            <!--initiator button-->
+            <!-- initiator button -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
@@ -497,7 +558,7 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
 
                 <android.widget.Button
                     android:id="@+id/button12"
@@ -507,16 +568,52 @@
                     android:text="@string/fragtwo_button"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+                    android:layout_marginEnd="20dp" />
             </TableRow>
 
-<View
-    android:layout_width="match_parent"
-    android:layout_height="100dp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
 
-<View
-    android:layout_width="match_parent"
-    android:layout_height="100dp" />
+                <android.widget.Button
+                    android:id="@+id/button10save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button11save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+
+                <android.widget.Button
+                    android:id="@+id/button12save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fragtwo_save_button"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/bebasneuefont"
+                    android:layout_marginEnd="20dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
 
         </LinearLayout>
     </ScrollView>

@@ -116,6 +116,11 @@ ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets -
     )
     insets
 }
+
+val insetsController = WindowCompat.getInsetsController(window, window.decorView)
+insetsController?.isAppearanceLightStatusBars = true
+insetsController?.isAppearanceLightNavigationBars = true
+
         // Handle Bottom Navigation Clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
