@@ -68,9 +68,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         // Set default fragment
         setCurrentFragment(FirstFragment())
-        
-        val rootView = findViewById<ViewGroup>(R.id.bottomRoot)
 
+    /*
+    val rootView = findViewById<ViewGroup>(R.id.bottomRoot)
+    
     val blurView = findViewById<BlurView>(R.id.blurView)
 
     // We use the window background as the frame-clear, so nothing peek‑through flickers
@@ -89,7 +90,7 @@ ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets -
         navInsets.bottom
     )
     insets
-}
+}*/
         // Handle Bottom Navigation Clicks
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
