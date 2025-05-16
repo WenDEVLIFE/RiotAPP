@@ -52,6 +52,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             defaultHandler?.uncaughtException(thread, throwable)
         }
         
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+window.statusBarColor = android.graphics.Color.TRANSPARENT
+window.navigationBarColor = android.graphics.Color.TRANSPARENT
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
@@ -94,7 +98,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
-        .setBlurRadius(12f)
+        .setBlurRadius(20f)
         
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
