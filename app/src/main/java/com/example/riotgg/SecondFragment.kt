@@ -39,20 +39,20 @@ class SecondFragment : Fragment() {
     val view = inflater.inflate(R.layout.fragment_second, container, false)
     val dbHelper = SavedGuideDbHelper(requireContext())
 
-    // List of buttons that open URLs
+    // List of buttons that open URLs with character titles
     val openButtons = listOf(
-        Pair(R.id.button1, "https://youtu.be/enmsXOKyhi4?si=ruXEZJSwt-dM8Vfx"),  // Jett
-        Pair(R.id.button2, "https://youtu.be/ohs4xDdumbc?si=mlGAyEnLSgwSOuWr"),  // Neon
-        Pair(R.id.button3, "https://youtu.be/AMaEwrfJt0o?si=Up13Q5BIzAKg5VRg"),  // Reyna
-        Pair(R.id.button4, "https://youtu.be/8q26gGOgpKA?si=d8APbWQ9b4QWqGOc"),  // Fade
-        Pair(R.id.button5, "https://youtu.be/RSzBwuCrP-o?si=KNmLplOsFZgEr7xB"),  // Kay/O
-        Pair(R.id.button6, "https://youtu.be/ECbC7RfsKRU?si=bHBmCVbJg1p9dKLv"),  // Gekko
-        Pair(R.id.button7, "https://youtu.be/wK0RPVsrsS8?si=XbNVB_DKvfIdzgsI"),  // Sage
-        Pair(R.id.button8, "https://youtu.be/vFuAYnPyEGY?si=PCbOWreDRebS-jUN"),  // Killjoy
-        Pair(R.id.button9, "https://youtu.be/3YqPTocB3NM?si=9LMP4VEWHCGO7rnV"),  // Cypher
-        Pair(R.id.button10, "https://youtu.be/NPSzKX8dYZo?si=XeMjXubxn9QjM8RT"), // Harbor
-        Pair(R.id.button11, "https://youtu.be/UxX_xe0PExA?si=8mWFlkM_5u8plnqZ"), // Viper
-        Pair(R.id.button12, "https://youtu.be/V2f4jaw0PfY?si=JDs-jx8Awx-v1SKM")  // Astra
+        Triple(R.id.button1, "https://youtu.be/enmsXOKyhi4?si=ruXEZJSwt-dM8Vfx", "Jett"),  
+        Triple(R.id.button2, "https://youtu.be/ohs4xDdumbc?si=mlGAyEnLSgwSOuWr", "Neon"),  
+        Triple(R.id.button3, "https://youtu.be/AMaEwrfJt0o?si=Up13Q5BIzAKg5VRg", "Reyna"),  
+        Triple(R.id.button4, "https://youtu.be/8q26gGOgpKA?si=d8APbWQ9b4QWqGOc", "Fade"),  
+        Triple(R.id.button5, "https://youtu.be/RSzBwuCrP-o?si=KNmLplOsFZgEr7xB", "Kay/O"),  
+        Triple(R.id.button6, "https://youtu.be/ECbC7RfsKRU?si=bHBmCVbJg1p9dKLv", "Gekko"),  
+        Triple(R.id.button7, "https://youtu.be/wK0RPVsrsS8?si=XbNVB_DKvfIdzgsI", "Sage"),  
+        Triple(R.id.button8, "https://youtu.be/vFuAYnPyEGY?si=PCbOWreDRebS-jUN", "Killjoy"),  
+        Triple(R.id.button9, "https://youtu.be/3YqPTocB3NM?si=9LMP4VEWHCGO7rnV", "Cypher"),  
+        Triple(R.id.button10, "https://youtu.be/NPSzKX8dYZo?si=XeMjXubxn9QjM8RT", "Harbor"), 
+        Triple(R.id.button11, "https://youtu.be/UxX_xe0PExA?si=8mWFlkM_5u8plnqZ", "Viper"), 
+        Triple(R.id.button12, "https://youtu.be/V2f4jaw0PfY?si=JDs-jx8Awx-v1SKM", "Astra")  
     )
 
     // List of save buttons corresponding to the above
@@ -72,7 +72,7 @@ class SecondFragment : Fragment() {
     )
 
     // Setup click listeners to open URLs
-    openButtons.forEach { (buttonId, url) ->
+    openButtons.forEach { (buttonId, url, _) ->
         view.findViewById<Button>(buttonId).setOnClickListener {
             openExternalLink(url)
         }
@@ -80,14 +80,14 @@ class SecondFragment : Fragment() {
 
     // Setup save buttons, update text if already saved
     saveButtonIds.forEachIndexed { index, saveButtonId ->
-        val url = openButtons[index].second
+        val ( _, url, title) = openButtons[index]
         val button = view.findViewById<Button>(saveButtonId)
 
         // Set initial text depending on saved state
         if (dbHelper.isGuideSaved(url)) {
             button.text = getString(R.string.fragtwo_deletesave_button)
         } else {
-            button.text = getString(R.string.fragtwo_save_button) 
+            button.text = getString(R.string.fragtwo_save_button)
         }
 
         button.setOnClickListener {
@@ -99,8 +99,6 @@ class SecondFragment : Fragment() {
                     Toast.makeText(requireContext(), "Guide deleted", Toast.LENGTH_SHORT).show()
                 }
             } else {
-               
-                val title = view.findViewById<Button>(openButtons[index].first).text.toString()
                 val saved = dbHelper.saveGuide(title, url)
                 if (saved) {
                     button.text = getString(R.string.fragtwo_deletesave_button)
@@ -114,5 +112,6 @@ class SecondFragment : Fragment() {
 
     return view
 }
+
 
 }
