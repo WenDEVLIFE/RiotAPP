@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 20,
-          "index": 2172,
-          "line": 58
+          "column": 42,
+          "index": 1568,
+          "line": 41
         },
         "start": {
-          "column": 20,
-          "index": 2172,
-          "line": 58
+          "column": 42,
+          "index": 1568,
+          "line": 41
         }
       }
     },
@@ -34,14 +34,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 44,
-          "index": 2687,
-          "line": 69
+          "column": 17,
+          "index": 6179,
+          "line": 174
         },
         "start": {
-          "column": 44,
-          "index": 2687,
-          "line": 69
+          "column": 17,
+          "index": 6179,
+          "line": 174
         }
       }
     },
@@ -209,7 +209,52 @@
           "line": 0
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_first.xml",
+      "selection": {
+        "end": {
+          "column": 44,
+          "index": 729,
+          "line": 19
+        },
+        "start": {
+          "column": 13,
+          "index": 698,
+          "line": 19
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml",
+      "selection": {
+        "end": {
+          "column": 43,
+          "index": 701,
+          "line": 20
+        },
+        "start": {
+          "column": 43,
+          "index": 701,
+          "line": 20
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_third.xml",
+      "selection": {
+        "end": {
+          "column": 43,
+          "index": 712,
+          "line": 17
+        },
+        "start": {
+          "column": 43,
+          "index": 712,
+          "line": 17
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/build.gradle.kts"
 }

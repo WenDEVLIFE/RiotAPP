@@ -25,10 +25,12 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_gravity="bottom"
         android:background="@drawable/bg_glass"
         app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@null"
+app:itemRippleColor="@android:color/transparent"
         app:itemIconTint="@color/bottom_nav_icon_tint"
         app:itemTextColor="@color/bottom_nav_text_tint" />
 
@@ -38,18 +40,18 @@
       android:id="@+id/flFragment"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:layout_marginTop="70dp"
       android:layout_marginBottom="60dp"
       android:background="@android:color/transparent" />
       
-        <!-- Main content with Toolbar -->
-        <LinearLayout
-            android:id="@+id/main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:fitsSystemWindows="true">
-
+        <!-- Top Bar (LinearLayout) -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
