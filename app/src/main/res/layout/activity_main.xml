@@ -14,27 +14,6 @@
         android:layout_width="match_parent"
         android:id="@+id/main"
         android:layout_height="match_parent">
-        
-        <eightbitlab.com.blurview.BlurView
-      android:id="@+id/blurView"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="bottom"
-      app:blurOverlayColor="@color/white">
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/bg_glass"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemBackground="@null"
-app:itemRippleColor="@android:color/transparent"
-        app:itemIconTint="@color/bottom_nav_icon_tint"
-        app:itemTextColor="@color/bottom_nav_text_tint" />
-
-  </eightbitlab.com.blurview.BlurView>
   
           <FrameLayout
       android:id="@+id/flFragment"
@@ -62,16 +41,16 @@ app:itemRippleColor="@android:color/transparent"
 
                     <ImageView
                         android:id="@+id/toolbarMenu"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:src="@drawable/ic_menu"
                         android:layout_centerVertical="true"
                         android:layout_alignParentStart="true" />
 
                     <ImageView
                         android:id="@+id/toolbarLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:src="@drawable/riotredlogo"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true" />
@@ -79,7 +58,26 @@ app:itemRippleColor="@android:color/transparent"
 
         </LinearLayout>
 
+<eightbitlab.com.blurview.BlurView
+      android:id="@+id/blurView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      app:blurOverlayColor="@color/white">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_glass"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@null"
+app:itemRippleColor="@android:color/transparent"
+        app:itemIconTint="@color/bottom_nav_icon_tint"
+        app:itemTextColor="@color/bottom_nav_text_tint" />
+
+  </eightbitlab.com.blurview.BlurView>
   
 
     </FrameLayout>

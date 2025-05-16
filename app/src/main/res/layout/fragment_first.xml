@@ -17,7 +17,7 @@
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
              android:padding="16dp"
-             android:layout_marginTop="40dp"
+             android:layout_marginTop="50dp"
              android:orientation="vertical">
 
             <TextView
@@ -377,6 +377,15 @@
                  android:text="See League of Legends"
                  android:layout_gravity="center" />
 
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="100dp" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="100dp" />
+    
         </LinearLayout>
 
     </ScrollView>
