@@ -104,12 +104,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     
     val bottomBlurView = findViewById<BlurView>(R.id.blurView)
 
-    // We use the window background as the frame-clear, so nothing peek‑through flickers
-    final Drawable windowBackground = getWindow().getDecorView().getBackground();
+// Get the window background drawable
+val windowBackground = window.decorView.background
 
-        bottomBlurView.setupWith(root, new RenderScriptBlur(this))
-                .setFrameClearDrawable(windowBackground)
-                .setBlurRadius(25f);
+// Set up the blur view
+bottomBlurView.setupWith(rootView, RenderScriptBlur(this))
+    .setFrameClearDrawable(windowBackground)
+    .setBlurRadius(25f)
+
         
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
