@@ -71,7 +71,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/garen"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -83,7 +83,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/riven"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/dariuscard"
@@ -94,7 +94,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/darius"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
             </TableRow>
 
@@ -188,7 +188,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/masteryi"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/viegocard"
@@ -199,7 +199,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/viego"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/nunucard"
@@ -210,7 +210,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/nunu"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
             </TableRow>
 
             <!-- assassin button -->
@@ -304,7 +304,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/leblanc"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -316,7 +316,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kata"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -328,7 +328,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/qiyanna"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
             </TableRow>
 
@@ -423,7 +423,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/jinx"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -435,7 +435,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/mf"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/kaisacard"
@@ -446,7 +446,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kaisa"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
             </TableRow>
 
             <!-- top lane button -->
@@ -539,7 +539,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/blitz"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -551,7 +551,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/renata"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -563,7 +563,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/yuumi"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp"  />
 
             </TableRow>
 

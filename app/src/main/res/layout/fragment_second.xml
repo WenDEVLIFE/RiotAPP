@@ -76,7 +76,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/jettcard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -88,7 +88,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/neoncard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/reynacard"
@@ -99,7 +99,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/reynacard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
             </TableRow>
 
             <!-- duelist button -->
@@ -230,7 +230,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/fadecard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -242,7 +242,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kayocard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/gekkocard"
@@ -253,7 +253,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/gekkocard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
             </TableRow>
 
             <!-- initiator button -->
@@ -380,7 +380,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/sagecard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/killjoycard"
@@ -391,7 +391,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/killjoycard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/cyphercard"
@@ -402,7 +402,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/cyphercard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
             </TableRow>
 
             <!-- sentinel button -->
@@ -533,7 +533,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/harborcard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -545,7 +545,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/vipercard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -557,7 +557,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/astracard"
                     android:layout_margin="8dp"
-                    app:cornerRadius="12dp" />
+                    app:cornerRadius="20dp" />
             </TableRow>
 
             <!-- initiator button -->
