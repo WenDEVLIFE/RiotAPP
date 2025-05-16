@@ -52,10 +52,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             defaultHandler?.uncaughtException(thread, throwable)
         }
         
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.statusBarColor = android.graphics.Color.TRANSPARENT
-        window.navigationBarColor = android.graphics.Color.TRANSPARENT
-
+        
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
