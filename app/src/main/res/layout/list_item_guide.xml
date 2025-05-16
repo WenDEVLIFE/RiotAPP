@@ -5,19 +5,20 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:background="?android:attr/selectableItemBackground">
-
+    
     <TextView
         android:id="@+id/guideTitle"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textSize="23sp"
         android:layout_height="wrap_content"
         android:text="Guide Title" />
 
     <ImageView
         android:id="@+id/removeIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:src="@drawable/ic_delete"
         android:contentDescription="Remove Guide"
         android:padding="4dp" />

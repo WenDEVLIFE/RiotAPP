@@ -25,6 +25,7 @@
                  android:layout_width="wrap_content"
                  android:fontFamily="@font/altonetrialregfont"
                  android:textSize="13sp"
+                 android:textStyle="bold"
                  android:textColor="@color/white"
                  android:layout_marginTop="15dp"
                  android:layout_marginStart="0dp"
