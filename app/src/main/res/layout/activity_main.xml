@@ -14,7 +14,34 @@
         android:layout_width="match_parent"
         android:id="@+id/main"
         android:layout_height="match_parent">
+        
+        <eightbitlab.com.blurview.BlurView
+      android:id="@+id/blurView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      app:blurOverlayColor="@color/white">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_glass"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_icon_tint"
+        app:itemTextColor="@color/bottom_nav_text_tint" />
+
+  </eightbitlab.com.blurview.BlurView>
+  
+          <FrameLayout
+      android:id="@+id/flFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="70dp"
+      android:layout_marginBottom="60dp"
+      android:background="@android:color/transparent" />
+      
         <!-- Main content with Toolbar -->
         <LinearLayout
             android:id="@+id/main"
@@ -23,21 +50,13 @@
             android:orientation="vertical"
             android:fitsSystemWindows="true">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="@android:color/transparent"
-                android:minHeight="?attr/actionBarSize"
-                android:elevation="0dp"
-                android:theme="?attr/actionBarTheme">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="8dp"
                     android:padding="8dp"
-                    android:background="@drawable/toolbar_backgrounds">
+                    >
 
                     <ImageView
                         android:id="@+id/toolbarMenu"
@@ -55,36 +74,11 @@
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true" />
                 </RelativeLayout>
-            </androidx.appcompat.widget.Toolbar>
 
         </LinearLayout>
 
-  <FrameLayout
-      android:id="@+id/flFragment"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_marginTop="70dp"
-      android:layout_marginBottom="60dp"
-      android:background="@android:color/transparent" />
 
-  <eightbitlab.com.blurview.BlurView
-      android:id="@+id/blurView"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="bottom"
-      app:blurOverlayColor="@color/white">
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/bg_glass_insets"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@color/bottom_nav_icon_tint"
-        app:itemTextColor="@color/bottom_nav_text_tint" />
-
-  </eightbitlab.com.blurview.BlurView>
+  
 
     </FrameLayout>
 
