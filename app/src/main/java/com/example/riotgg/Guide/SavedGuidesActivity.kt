@@ -20,13 +20,15 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import com.example.riotgg.R
+import android.widget.BaseAdapter
+
 import com.example.riotgg.db.*
 
 class SavedGuidesActivity : AppCompatActivity() {
 
     private lateinit var dbHelper: SavedGuideDbHelper
     private lateinit var listView: ListView
-    private lateinit var adapter: ArrayAdapter<String>
+    private lateinit var adapter: BaseAdapter
     private val guideTitles = mutableListOf<String>()
     private val guideUrls = mutableListOf<String>()
     private lateinit var emptyMessage: TextView
@@ -107,15 +109,15 @@ class SavedGuidesActivity : AppCompatActivity() {
         }
         cursor.close()
 
-        adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, guideTitles)
+        adapter = GuideAdapter(guideTitles, guideUrls)
         listView.adapter = adapter
 
         if (guideTitles.isEmpty()) {
-           emptyMessage.visibility = View.VISIBLE
-           listView.visibility = View.GONE
+            emptyMessage.visibility = View.VISIBLE
+            listView.visibility = View.GONE
         } else {
-           emptyMessage.visibility = View.GONE
-           listView.visibility = View.VISIBLE
+            emptyMessage.visibility = View.GONE
+            listView.visibility = View.VISIBLE
         }
 
     }
@@ -134,5 +136,40 @@ class SavedGuidesActivity : AppCompatActivity() {
             .setNegativeButton("Cancel", null)
             .show()
     }
+    
+    inner class GuideAdapter(
+    private val titles: List<String>,
+    private val urls: List<String>
+) : BaseAdapter() {
+
+    override fun getCount() = titles.size
+    override fun getItem(position: Int) = titles[position]
+    override fun getItemId(position: Int) = position.toLong()
+
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+        val view = convertView ?: layoutInflater.inflate(R.layout.list_item_guide, parent, false)
+
+        val titleView = view.findViewById<TextView>(R.id.guideTitle)
+        val removeIcon = view.findViewById<ImageView>(R.id.removeIcon)
+
+        titleView.text = titles[position]
+
+        titleView.setOnClickListener {
+            openExternalLink(urls[position])
+        }
+
+        removeIcon.setOnClickListener {
+            confirmDelete(position)
+        }
+
+        removeIcon.setOnLongClickListener {
+            Toast.makeText(this@SavedGuidesActivity, "Delete Guide", Toast.LENGTH_SHORT).show()
+            true
+        }
+
+        return view
+    }
+}
+
 }
 
