@@ -64,14 +64,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt",
       "selection": {
         "end": {
-          "column": 45,
-          "index": 897,
-          "line": 30
+          "column": 9,
+          "index": 2325,
+          "line": 71
         },
         "start": {
-          "column": 45,
-          "index": 897,
-          "line": 30
+          "column": 9,
+          "index": 2325,
+          "line": 71
         }
       }
     },
@@ -226,5 +226,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/drawable/ic_delete.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt"
 }

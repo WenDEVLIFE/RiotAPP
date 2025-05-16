@@ -70,30 +70,6 @@ class SavedGuidesActivity : AppCompatActivity() {
            val url = guideUrls[position]
            openExternalLink(url)
         }
-
-        gestureDetector = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
-            override fun onFling(
-                e1: MotionEvent?,  // Changed to nullable
-                e2: MotionEvent?,  // Changed to nullable
-                velocityX: Float,
-                velocityY: Float
-            ): Boolean {
-                // Detect left-swipe: startX - endX > threshold
-                if (e1 != null && e2 != null && (e1.x - e2.x) > 100) {
-                    val position = listView.pointToPosition(e1.x.toInt(), e1.y.toInt())
-                    if (position != AdapterView.INVALID_POSITION) {
-                        confirmDelete(position)
-                    }
-                }
-                return true  // return true to indicate you handled the fling
-            }
-        })
-
-        // Attach to your ListView
-        listView.setOnTouchListener { _, event ->
-            gestureDetector.onTouchEvent(event)
-            false
-        }
         
     }
 
