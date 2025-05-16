@@ -7,12 +7,13 @@
     android:padding="16dp">
 
     <!-- User Profile Section -->
-    <ImageView
-        android:layout_marginTop="200dp"
+<com.google.android.material.imageview.ShapeableImageView
+                    android:layout_marginTop="200dp"
         android:id="@+id/profile_picture"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/profilepic_icon" />
+        android:src="@drawable/jinx" 
+                    app:cornerRadius="50dp" />
 
     <TextView
         android:id="@+id/user_text"
