@@ -18,7 +18,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-
+import android.widget.Toast
+import com.example.riotgg.R
 import com.example.riotgg.db.*
 
 class SavedGuidesActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class SavedGuidesActivity : AppCompatActivity() {
     private lateinit var emptyMessage: TextView
     
     private fun openExternalLink(url: String) {
-        val alertDialogBuilder = AlertDialog.Builder(requireContext())
+        val alertDialogBuilder = AlertDialog.Builder(this)
         alertDialogBuilder.setTitle("External Link")
         alertDialogBuilder.setMessage("This link leads to an external app. Continue?")
 

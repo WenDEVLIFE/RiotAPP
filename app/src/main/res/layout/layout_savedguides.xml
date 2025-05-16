@@ -2,7 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/saved_guides_layout"
-    android:background="@drawable/riotbgtwovalo"
+    android:background="@drawable/riotbgwallpapervalo"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
@@ -27,8 +27,8 @@
 
         <ImageView
             android:id="@+id/toolbarBack"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
             android:src="@drawable/ic_back"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
@@ -41,7 +41,7 @@
             android:text="Saved Guides"
             android:fontFamily="@font/boldonseregfont"
             android:textSize="20sp"
-            android:textColor="@color/riotred"
+            android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_centerInParent="true" />
             

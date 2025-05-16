@@ -23,7 +23,7 @@ import android.view.ViewOutlineProvider
 // BlurView library
 import eightbitlab.com.blurview.BlurView
 import eightbitlab.com.blurview.RenderScriptBlur
-import androidx.core.graphics.toArgb
+
 
 
 // Window insets helpers
@@ -139,7 +139,7 @@ insetsController?.isAppearanceLightNavigationBars = true
         R.id.leagueoflegends -> {
             setCurrentFragment(ThirdFragment())
         }
-        R.id.save_guides -> {
+        R.id.nav_save_guides -> {
             // Launch SavedGuidesActivity
             val intent = Intent(this, SavedGuidesActivity::class.java)
             startActivity(intent)
