@@ -74,7 +74,9 @@
     app:menu="@menu/bottom_nav_menu"
     app:itemRippleColor="@android:color/transparent"
     app:itemIconTint="@color/bottom_nav_icon_tint"
-    app:itemTextColor="@color/bottom_nav_text_tint" />
+    app:itemTextColor="@color/bottom_nav_text_tint"
+    app:itemActiveIndicatorStyle="@android:color/transparent" />
+
 
   </eightbitlab.com.blurview.BlurView>
   

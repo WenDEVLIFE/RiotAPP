@@ -99,41 +99,90 @@
 
             <!--duelist button-->
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
 
-                <android.widget.Button
-                    android:id="@+id/button1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/fragtwo_button"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp" />
+    <!-- Column 1 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
-                <android.widget.Button
-                    android:id="@+id/button2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/fragtwo_button"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_button"
+            android:fontFamily="@font/bebasneuefont" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
 
-                <android.widget.Button
-                    android:id="@+id/button3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/fragtwo_button"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="20dp"/>
+        <Button
+            android:id="@+id/button1_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_save_button"
+            android:fontFamily="@font/bebasneuefont" />
+    </LinearLayout>
 
-            </TableRow>
+    <!-- Column 2 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_button"
+            android:fontFamily="@font/bebasneuefont" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
+        <Button
+            android:id="@+id/button2_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_save_button"
+            android:fontFamily="@font/bebasneuefont" />
+    </LinearLayout>
+
+    <!-- Column 3 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_button"
+            android:fontFamily="@font/bebasneuefont" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
+        <Button
+            android:id="@+id/button3_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragtwo_save_button"
+            android:fontFamily="@font/bebasneuefont" />
+    </LinearLayout>
+</TableRow>
+
 
             <!--initiator title-->
 

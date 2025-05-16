@@ -1,6 +1,8 @@
 package com.example.riotgg
 
 import android.content.DialogInterface
+import android.os.Build
+
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
@@ -55,6 +57,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         WindowCompat.setDecorFitsSystemWindows(window, false)
 window.statusBarColor = android.graphics.Color.TRANSPARENT
 window.navigationBarColor = android.graphics.Color.TRANSPARENT
+
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+    window.isNavigationBarContrastEnforced = false
+}
 
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
