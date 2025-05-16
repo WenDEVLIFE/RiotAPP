@@ -23,8 +23,7 @@ import android.view.ViewOutlineProvider
 // BlurView library
 import eightbitlab.com.blurview.BlurView
 import eightbitlab.com.blurview.RenderScriptBlur
-
-
+import android.graphics.drawable.Drawable
 
 // Window insets helpers
 import androidx.core.view.WindowCompat
@@ -103,14 +102,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     
     val rootView = findViewById<ViewGroup>(R.id.main)
     
-    val blurView = findViewById<BlurView>(R.id.blurView)
+    val bottomBlurView = findViewById<BlurView>(R.id.blurView)
 
     // We use the window background as the frame-clear, so nothing peek‑through flickers
-    val windowBackground = window.decorView.background
+    final Drawable windowBackground = getWindow().getDecorView().getBackground();
 
-    blurView.setupWith(rootView)
-        .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
-        .setBlurRadius(20f)
+        bottomBlurView.setupWith(root, new RenderScriptBlur(this))
+                .setFrameClearDrawable(windowBackground)
+                .setBlurRadius(25f);
         
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())

@@ -62,14 +62,14 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_gravity="bottom"
-      app:blurOverlayColor="@color/white">
+      app:blurOverlayColor="#78ffffff">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottomNavigationView"
     android:layout_width="match_parent"
     android:layout_height="75dp"
     android:layout_gravity="bottom"
-    android:background="@color/gray5"
+    android:background="@android:color/transparent"
     app:menu="@menu/bottom_nav_menu"
     app:itemRippleColor="@android:color/transparent"
     app:itemIconTint="@color/bottom_nav_icon_tint"
