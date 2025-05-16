@@ -12,6 +12,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
+        android:id="@+id/main"
         android:layout_height="match_parent">
 
         <!-- Main content with Toolbar -->
@@ -58,36 +59,33 @@
 
         </LinearLayout>
 
-        <!-- Fragment content -->
-        <FrameLayout
-            android:id="@+id/flFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="70dp"
-            android:layout_marginBottom="60dp"
-            android:background="@android:color/transparent" />
-            
-            <eightbitlab.com.blurview.BlurView
-             android:layout_height="wrap_content"
-             android:layout_width="match_parent"
-             android:id="@+id/blurView" 
-             app:blurOverlayColor="@color/white">
+  <FrameLayout
+      android:id="@+id/flFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="70dp"
+      android:layout_marginBottom="60dp"
+      android:background="@android:color/transparent" />
 
-        <!-- Bottom Navigation -->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/bg_glass_insets"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            app:menu="@menu/bottom_nav_menu"
-            app:itemIconTint="@color/bottom_nav_icon_tint"
-            app:itemTextColor="@color/bottom_nav_text_tint" />
-            
-              </eightbitlab.com.blurview.BlurView>
+  <eightbitlab.com.blurview.BlurView
+      android:id="@+id/blurView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      app:blurOverlayColor="@color/white">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_glass_insets"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_icon_tint"
+        app:itemTextColor="@color/bottom_nav_text_tint" />
+
+  </eightbitlab.com.blurview.BlurView>
+
     </FrameLayout>
 
     <!-- Drawer sidebar -->
