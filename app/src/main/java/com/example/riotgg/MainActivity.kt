@@ -159,12 +159,24 @@ insetsController?.isAppearanceLightNavigationBars = true
         when (item.itemId) {
             R.id.nav_home -> {
                 setCurrentFragment(FirstFragment())
+                 // Immediately select Home tab so after returning, Home is shown
+            bottomNavigationView.selectedItemId = R.id.home
             }
+            R.id.nav_save_guides -> {
+            // Launch SavedGuidesActivity
+            val intent = Intent(this, SavedGuidesActivity::class.java)
+            startActivity(intent)
+            
+            // Immediately select Home tab so after returning, Home is shown
+            bottomNavigationView.selectedItemId = R.id.home
+        }
             R.id.nav_valorant -> {
                 setCurrentFragment(SecondFragment())
+                bottomNavigationView.selectedItemId = R.id.valorant
             }
             R.id.nav_league -> {
                 setCurrentFragment(ThirdFragment())
+                bottomNavigationView.selectedItemId = R.id.leagueoflegends
             }
 
             R.id.nav_exit ->{
