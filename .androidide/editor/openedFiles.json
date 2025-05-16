@@ -20,13 +20,13 @@
       "selection": {
         "end": {
           "column": 40,
-          "index": 3454,
-          "line": 88
+          "index": 3228,
+          "line": 84
         },
         "start": {
           "column": 40,
-          "index": 3454,
-          "line": 88
+          "index": 3228,
+          "line": 84
         }
       }
     },
@@ -34,14 +34,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 41,
-          "index": 2005,
-          "line": 51
+          "column": 57,
+          "index": 2120,
+          "line": 54
         },
         "start": {
-          "column": 41,
-          "index": 2005,
-          "line": 51
+          "column": 57,
+          "index": 2120,
+          "line": 54
         }
       }
     },
@@ -164,7 +164,22 @@
           "line": 0
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/.github/workflows/android-build.yml",
+      "selection": {
+        "end": {
+          "column": 24,
+          "index": 65,
+          "line": 4
+        },
+        "start": {
+          "column": 24,
+          "index": 65,
+          "line": 4
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/color/bottom_nav_icon_tint.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/.github/workflows/android-build.yml"
 }
