@@ -63,26 +63,19 @@
 
         </FrameLayout>
 
-    </LinearLayout>
-
-    <FrameLayout
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:id="@+id/bottomRoot"
-         android:layout_gravity="bottom">
-
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
              android:background="@drawable/bg_glass_insets"
              app:menu="@menu/bottom_nav_menu"
+             android:background="@drawable/bottom_nav_bg"
+             app:itemIconTint="@color/bottom_nav_icon_tint"
+             app:itemTextColor="@color/bottom_nav_text_tint"
              android:paddingBottom="4dp"
              android:id="@+id/bottomNavigationView"
              android:paddingTop="4dp" />
 
-
-    </FrameLayout>
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
          android:layout_height="match_parent"

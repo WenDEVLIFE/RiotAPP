@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 40,
-          "index": 3099,
-          "line": 81
+          "column": 0,
+          "index": 3089,
+          "line": 78
         },
         "start": {
-          "column": 40,
-          "index": 3099,
-          "line": 81
+          "column": 0,
+          "index": 3089,
+          "line": 78
         }
       }
     },
@@ -64,17 +64,62 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/colors.xml",
       "selection": {
         "end": {
-          "column": 33,
-          "index": 33,
+          "column": 22,
+          "index": 915,
+          "line": 28
+        },
+        "start": {
+          "column": 17,
+          "index": 910,
+          "line": 28
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/color/bottom_nav_icon_tint.xml",
+      "selection": {
+        "end": {
+          "column": 37,
+          "index": 241,
+          "line": 5
+        },
+        "start": {
+          "column": 32,
+          "index": 236,
+          "line": 5
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/color/bottom_nav_text_tint.xml",
+      "selection": {
+        "end": {
+          "column": 37,
+          "index": 241,
+          "line": 5
+        },
+        "start": {
+          "column": 37,
+          "index": 241,
+          "line": 5
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/drawable/bg_glass_insets.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
           "line": 0
         },
         "start": {
-          "column": 33,
-          "index": 33,
+          "column": 0,
+          "index": 0,
           "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/color/bottom_nav_text_tint.xml"
 }
