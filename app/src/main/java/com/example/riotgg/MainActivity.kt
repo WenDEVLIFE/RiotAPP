@@ -23,6 +23,8 @@ import android.view.ViewOutlineProvider
 // BlurView library
 import eightbitlab.com.blurview.BlurView
 import eightbitlab.com.blurview.RenderScriptBlur
+import androidx.core.graphics.toArgb
+
 
 // Window insets helpers
 import androidx.core.view.WindowCompat
@@ -53,6 +55,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             // give the default handler a chance to do its thing (e.g. show system dialog)
             defaultHandler?.uncaughtException(thread, throwable)
         }
+
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
         
         WindowCompat.setDecorFitsSystemWindows(window, false)
 window.statusBarColor = android.graphics.Color.TRANSPARENT
@@ -61,9 +66,6 @@ window.navigationBarColor = android.graphics.Color.TRANSPARENT
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     window.isNavigationBarContrastEnforced = false
 }
-
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
 
 
         drawerLayout = findViewById(R.id.drawer_layout)

@@ -3,10 +3,10 @@
     <style name="Base.Theme.RiotGG" parent="Theme.Material3.DayNight.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
-    <item name="android:statusBarColor">@android:color/transparent</item>
-<item name="android:navigationBarColor">@android:color/transparent</item>
-<item name="android:windowLightStatusBar">true</item> <!-- Optional: for dark icons -->
-<item name="android:enforceNavigationBarContrast">false</item> <!-- Optional: disable contrast enforcement -->
+    <item name="android:statusBarColor">#002C2B32</item>
+<item name="android:navigationBarColor">#002C2B32</item>
+<item name="android:windowLightStatusBar">falsw</item>
+<item name="android:enforceNavigationBarContrast">true</item> 
 
     </style>
 

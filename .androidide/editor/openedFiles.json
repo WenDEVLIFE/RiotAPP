@@ -35,13 +35,13 @@
       "selection": {
         "end": {
           "column": 0,
-          "index": 4500,
-          "line": 122
+          "index": 941,
+          "line": 26
         },
         "start": {
           "column": 0,
-          "index": 4500,
-          "line": 122
+          "index": 941,
+          "line": 26
         }
       }
     },
@@ -64,14 +64,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/colors.xml",
       "selection": {
         "end": {
-          "column": 22,
-          "index": 963,
-          "line": 29
+          "column": 39,
+          "index": 452,
+          "line": 12
         },
         "start": {
-          "column": 17,
-          "index": 958,
-          "line": 29
+          "column": 31,
+          "index": 444,
+          "line": 12
         }
       }
     },
@@ -154,14 +154,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 615,
-          "line": 9
+          "column": 62,
+          "index": 499,
+          "line": 8
         },
         "start": {
-          "column": 0,
-          "index": 615,
-          "line": 9
+          "column": 62,
+          "index": 499,
+          "line": 8
         }
       }
     },
@@ -256,5 +256,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/themes.xml"
 }
