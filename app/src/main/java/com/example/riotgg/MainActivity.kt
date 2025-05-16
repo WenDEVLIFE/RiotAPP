@@ -48,16 +48,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     Toast.LENGTH_LONG
                 ).show()
             }
-            
+            // give the default handler a chance to do its thing (e.g. show system dialog)
             defaultHandler?.uncaughtException(thread, throwable)
         }
-       
+        
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-         
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.statusBarColor = android.graphics.Color.TRANSPARENT
-        window.navigationBarColor = android.graphics.Color.TRANSPARENT
+
 
         drawerLayout = findViewById(R.id.drawer_layout)
         actionBarDrawerToggle = ActionBarDrawerToggle(
@@ -97,7 +94,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     blurView.setupWith(rootView)
         .setFrameClearDrawable(windowBackground)      // snapshot what’s behind
-        .setBlurRadius(65f)
+        .setBlurRadius(12f)
         
 ViewCompat.setOnApplyWindowInsetsListener(bottomNavigationView) { view, insets ->
     val navInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
