@@ -36,6 +36,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
+            // show crash info in a toast
+            runOnUiThread {
+                Toast.makeText(
+                    this,
+                    "Unhandled exception:\n${throwable.localizedMessage}\n" +
+                    throwable.stackTrace.joinToString("\n"),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+            // give the default handler a chance to do its thing (e.g. show system dialog)
+            defaultHandler?.uncaughtException(thread, throwable)
+        }
+        
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
