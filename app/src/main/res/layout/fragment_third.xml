@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -62,8 +62,8 @@
                 android:gravity="center">
 
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/card"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/card"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -71,13 +71,11 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/garen"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:cornerRadius="12dp" />
 
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/rivencard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rivencard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -85,12 +83,10 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/riven"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:cornerRadius="12dp" />
 
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/dariuscard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/dariuscard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -98,10 +94,8 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/darius"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-        
+                    app:cornerRadius="12dp" />
+
             </TableRow>
 
             <!-- top lane button -->
@@ -185,44 +179,38 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-  <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/masteryicard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/masteryicard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/masteryi"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    android:layout_margin="8dp"
+                    app:cornerRadius="12dp" />
 
-<com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/viegocard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/viegocard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/viego"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-                
-                    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/nunucard"
+                    android:layout_margin="8dp"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/nunucard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/nunu"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    android:layout_margin="8dp"
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- assassin button -->
@@ -306,9 +294,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                    
-                    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/leblancard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/leblancard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -316,13 +304,11 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/leblanc"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-        
+                    app:cornerRadius="12dp" />
 
-<com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/katacard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/katacard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -330,13 +316,11 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kata"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:cornerRadius="12dp" />
 
-                
-                    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/qiyacard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/qiyacard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -344,10 +328,8 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/qiyanna"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-        
+                    app:cornerRadius="12dp" />
+
             </TableRow>
 
             <!-- top lane button -->
@@ -432,8 +414,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/jinxcard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/jinxcard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -441,13 +423,11 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/jinx"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-               
-                    
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/missforcard"
+                    app:cornerRadius="12dp" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/missforcard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -455,12 +435,10 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/mf"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-                    
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/kaisacard"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/kaisacard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -468,9 +446,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kaisa"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:cornerRadius="12dp" />
             </TableRow>
 
             <!-- top lane button -->
@@ -554,8 +530,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/blitzcard"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/blitzcard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -563,13 +539,11 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/blitz"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-                    
+                    app:cornerRadius="12dp" />
 
- <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/renatacard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/renatacard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -577,24 +551,20 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/renata"
                     android:layout_margin="8dp"
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
+                    app:cornerRadius="12dp" />
 
-                    
-                     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/yuumicard"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/yuumicard"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/yuumi"
-                    android:layout_margin="8dp" 
-        app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
-        app:cornerRadius="12dp" />
-        
+                    android:layout_margin="8dp"
+                    app:cornerRadius="12dp" />
+
             </TableRow>
 
             <!-- top lane button -->

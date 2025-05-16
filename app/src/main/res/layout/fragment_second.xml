@@ -76,8 +76,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/jettcard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
 
@@ -90,8 +88,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/neoncard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -103,8 +99,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/reynacard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
             </TableRow>
 
@@ -236,8 +230,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/fadecard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
 
@@ -250,8 +242,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/kayocard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -263,8 +253,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/gekkocard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
             </TableRow>
 
@@ -392,8 +380,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/sagecard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -405,8 +391,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/killjoycard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -418,8 +402,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/cyphercard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
             </TableRow>
 
@@ -551,8 +533,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/harborcard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
 
@@ -565,8 +545,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/vipercard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
 
 
@@ -579,8 +557,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/astracard"
                     android:layout_margin="8dp"
-                    app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ImageView.ShapeAppearance"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
                     app:cornerRadius="12dp" />
             </TableRow>
 
