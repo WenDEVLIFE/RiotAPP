@@ -64,14 +64,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 612,
-          "line": 22
+          "column": 25,
+          "index": 638,
+          "line": 23
         },
         "start": {
-          "column": 0,
-          "index": 612,
-          "line": 22
+          "column": 6,
+          "index": 619,
+          "line": 23
         }
       }
     },
@@ -149,7 +149,22 @@
           "line": 35
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/AndroidManifest.xml",
+      "selection": {
+        "end": {
+          "column": 52,
+          "index": 1013,
+          "line": 27
+        },
+        "start": {
+          "column": 52,
+          "index": 1013,
+          "line": 27
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/AndroidManifest.xml"
 }
