@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Set default fragment
         setCurrentFragment(FirstFragment())
         
-        val rootView = findViewById<ViewGroup>(R.id.main)
+        val rootView = findViewById<ViewGroup>(R.id.bottomRoot)
 
     val blurView = findViewById<BlurView>(R.id.blurView)
 

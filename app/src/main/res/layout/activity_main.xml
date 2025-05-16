@@ -68,9 +68,16 @@
     <FrameLayout
          android:layout_height="wrap_content"
          android:layout_width="match_parent"
+         android:id="@+id/bottomRoot"
          android:layout_gravity="bottom">
 
-<com.google.android.material.bottomnavigation.BottomNavigationView
+        <eightbitlab.com.blurview.BlurView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:id="@+id/blurView" 
+             app:blurOverlayColor="@color/white">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
              android:background="@drawable/bg_glass_insets"
@@ -78,6 +85,9 @@
              android:paddingBottom="4dp"
              android:id="@+id/bottomNavigationView"
              android:paddingTop="4dp" />
+             
+        </eightbitlab.com.blurview.BlurView>
+
 
     </FrameLayout>
 

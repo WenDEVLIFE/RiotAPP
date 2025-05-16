@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 41,
-          "index": 2645,
-          "line": 70
+          "column": 0,
+          "index": 2918,
+          "line": 78
         },
         "start": {
-          "column": 41,
-          "index": 2645,
-          "line": 70
+          "column": 0,
+          "index": 2918,
+          "line": 78
         }
       }
     },
@@ -34,14 +34,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 8,
-          "index": 3149,
-          "line": 81
+          "column": 62,
+          "index": 2800,
+          "line": 71
         },
         "start": {
-          "column": 8,
-          "index": 3149,
-          "line": 81
+          "column": 62,
+          "index": 2800,
+          "line": 71
         }
       }
     },
@@ -76,5 +76,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
 }
