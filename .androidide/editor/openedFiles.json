@@ -34,14 +34,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 4,
-          "index": 2801,
-          "line": 73
+          "column": 52,
+          "index": 2173,
+          "line": 55
         },
         "start": {
-          "column": 4,
-          "index": 2801,
-          "line": 73
+          "column": 52,
+          "index": 2173,
+          "line": 55
         }
       }
     },

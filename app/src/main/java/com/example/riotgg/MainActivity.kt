@@ -47,9 +47,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         actionBarDrawerToggle = ActionBarDrawerToggle(
             this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close
         )
-        actionBarDrawerToggle.syncState()
+        
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
-
+        actionBarDrawerToggle.syncState()
+        
+         // Enable drawer toggle in the toolbar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
+        
         val menuIcon: ImageView = findViewById(R.id.toolbarMenu)
         menuIcon.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
