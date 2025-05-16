@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 3089,
-          "line": 78
+          "column": 45,
+          "index": 2754,
+          "line": 69
         },
         "start": {
-          "column": 0,
-          "index": 3089,
-          "line": 78
+          "column": 45,
+          "index": 2754,
+          "line": 69
         }
       }
     },
@@ -121,5 +121,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/color/bottom_nav_text_tint.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml"
 }

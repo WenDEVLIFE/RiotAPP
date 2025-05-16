@@ -68,7 +68,6 @@
              android:layout_width="match_parent"
              android:background="@drawable/bg_glass_insets"
              app:menu="@menu/bottom_nav_menu"
-             android:background="@drawable/bottom_nav_bg"
              app:itemIconTint="@color/bottom_nav_icon_tint"
              app:itemTextColor="@color/bottom_nav_text_tint"
              android:paddingBottom="4dp"
