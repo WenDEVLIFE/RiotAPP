@@ -51,11 +51,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             
             defaultHandler?.uncaughtException(thread, throwable)
         }
-        
-        
+       
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+         
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        window.statusBarColor = android.graphics.Color.TRANSPARENT
+        window.navigationBarColor = android.graphics.Color.TRANSPARENT
 
         drawerLayout = findViewById(R.id.drawer_layout)
         actionBarDrawerToggle = ActionBarDrawerToggle(

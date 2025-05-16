@@ -7,7 +7,4 @@
 
     <style name="Theme.RiotGG" parent="Base.Theme.RiotGG" />
     
-    <style name="App.RIOTGG.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-    <item name="indicatorColor">@color/transparent</item>  
-    </style>
 </resources>

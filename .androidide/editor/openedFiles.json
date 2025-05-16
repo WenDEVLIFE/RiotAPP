@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 38,
-          "index": 3067,
-          "line": 79
+          "column": 41,
+          "index": 711,
+          "line": 19
         },
         "start": {
-          "column": 38,
-          "index": 3067,
-          "line": 79
+          "column": 41,
+          "index": 711,
+          "line": 19
         }
       }
     },
@@ -34,14 +34,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 8,
-          "index": 2066,
-          "line": 54
+          "column": 0,
+          "index": 3324,
+          "line": 85
         },
         "start": {
-          "column": 8,
-          "index": 2066,
-          "line": 54
+          "column": 0,
+          "index": 3324,
+          "line": 85
         }
       }
     },
@@ -184,14 +184,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 30,
-          "index": 481,
-          "line": 10
+          "column": 4,
+          "index": 347,
+          "line": 8
         },
         "start": {
-          "column": 30,
-          "index": 481,
-          "line": 10
+          "column": 4,
+          "index": 347,
+          "line": 8
         }
       }
     },
@@ -256,5 +256,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/activity_main.xml"
 }
