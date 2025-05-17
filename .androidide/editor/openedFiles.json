@@ -4,29 +4,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_third.xml",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 14,
+          "index": 23648,
+          "line": 592
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml",
-      "selection": {
-        "end": {
-          "column": 28,
-          "index": 4360,
-          "line": 107
-        },
-        "start": {
-          "column": 28,
-          "index": 4360,
-          "line": 107
+          "column": 14,
+          "index": 23648,
+          "line": 592
         }
       }
     }
