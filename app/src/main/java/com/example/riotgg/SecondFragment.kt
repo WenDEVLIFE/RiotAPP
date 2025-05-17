@@ -57,10 +57,19 @@ override fun onCreateView(
     )
 
     val saveImageIds = listOf(
-        R.id.saveg1,
-        R.id.saveg2,
-        R.id.saveg3
-    )
+    R.id.saveg1,
+    R.id.saveg2,
+    R.id.saveg3,
+    R.id.saveg4,
+    R.id.saveg5,
+    R.id.saveg6,
+    R.id.saveg7,
+    R.id.saveg8,
+    R.id.saveg9,
+    R.id.saveg10,
+    R.id.saveg11,
+    R.id.saveg12
+)
 
     openButtons.forEach { (buttonId, url, _) ->
         view.findViewById<Button>(buttonId).setOnClickListener {

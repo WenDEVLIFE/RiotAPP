@@ -62,7 +62,7 @@
                  android:layout_marginStart="0dp"
                  android:textStyle="bold"
                  android:layout_gravity="left"
-                 android:text="News" />
+                 android:text="Core Values" />
 
             <androidx.cardview.widget.CardView
                  android:layout_height="250dp"
@@ -97,7 +97,7 @@
                  android:layout_marginStart="0dp"
                  android:textStyle="bold"
                  android:layout_gravity="left"
-                 android:text="Updates" />
+                 android:text="News" />
 
             <LinearLayout
                  android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
                  android:layout_marginStart="0dp"
                  android:textStyle="bold"
                  android:layout_gravity="left"
-                 android:text="Updates" />
+                 android:text="News" />
 
             <LinearLayout
                  android:layout_height="wrap_content"
