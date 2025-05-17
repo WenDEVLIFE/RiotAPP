@@ -62,88 +62,6 @@
 
             <!-- duelist -->
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fillViewport="true"
-                    android:scrollbars="none">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:padding="8dp">
-
-                        <!-- Card 1 -->
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="12dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true">
-
-                            <ImageView
-                                android:id="@+id/jettcard"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/jettcard"
-                                android:maxWidth="200dp"
-                                android:maxHeight="200dp"
-                                android:scaleType="centerInside"
-                                android:adjustViewBounds="true" />
-                        </androidx.cardview.widget.CardView>
-
-                        <!-- Card 2 -->
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="12dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true">
-
-                            <ImageView
-                                android:id="@+id/neoncard"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/neoncard"
-                                android:maxWidth="200dp"
-                                android:maxHeight="200dp"
-                                android:scaleType="centerInside"
-                                android:adjustViewBounds="true" />
-                        </androidx.cardview.widget.CardView>
-
-                        <!-- Card 3 -->
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardCornerRadius="12dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true">
-
-                            <ImageView
-                                android:id="@+id/reynacard"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/reynacard"
-                                android:maxWidth="200dp"
-                                android:maxHeight="200dp"
-                                android:scaleType="centerInside"
-                                android:adjustViewBounds="true" />
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-            </TableRow>
-
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,9 +106,11 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginTop="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
                             android:gravity="center_vertical">
 
-                            <Button
+                            <android.widget.Button
                                 android:id="@+id/button1"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -243,7 +163,7 @@
                             android:layout_marginTop="8dp"
                             android:gravity="center_vertical">
 
-                            <Button
+                            <android.widget.Button
                                 android:id="@+id/button2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -295,7 +215,7 @@
                             android:layout_marginTop="8dp"
                             android:gravity="center_vertical">
 
-                            <Button
+                            <android.widget.Button
                                 android:id="@+id/button3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
