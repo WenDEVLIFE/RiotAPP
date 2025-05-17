@@ -78,39 +78,51 @@
         android:id="@+id/jettcard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:src="@drawable/jettcard"
-            android:maxWidth="200dp"
-    android:maxHeight="200dp"
+            android:maxWidth="100dp"
+    android:maxHeight="100dp"
     android:scaleType="centerInside"
-
         android:adjustViewBounds="true" />
 
 </androidx.cardview.widget.CardView>
 
 
-
-                <com.google.android.material.imageview.ShapeableImageView
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+    
+               <ImageView
                     android:id="@+id/neoncard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/neoncard"
-                    android:layout_margin="8dp"
-                    app:cornerRadius="20dp" />
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/neoncard"
+            android:maxWidth="100dp"
+    android:maxHeight="100dp"
+    android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+                    />
+</androidx.cardview.widget.CardView>
 
-                <com.google.android.material.imageview.ShapeableImageView
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+                <ImageView
                     android:id="@+id/reynacard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/reynacard"
-                    android:layout_margin="8dp"
-                    app:cornerRadius="20dp" />
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reynacard"
+            android:maxWidth="100dp"
+    android:maxHeight="100dp"
+    android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+                 />
+                 </androidx.cardview.widget.CardView>
             </TableRow>
 
             <!-- duelist button -->
