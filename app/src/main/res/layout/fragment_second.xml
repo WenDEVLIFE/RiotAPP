@@ -105,7 +105,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="8dp"
                             android:gravity="center_vertical">
@@ -160,7 +160,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -212,7 +212,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -314,7 +314,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="8dp"
                             android:gravity="center_vertical">
@@ -369,7 +369,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -421,7 +421,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -522,7 +522,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="8dp"
                             android:gravity="center_vertical">
@@ -577,7 +577,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -629,7 +629,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -733,7 +733,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginRight="8dp"
                             android:gravity="center_vertical">
@@ -788,7 +788,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
@@ -840,7 +840,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="4dp"
                             android:gravity="center_vertical">
 
                             <android.widget.Button
