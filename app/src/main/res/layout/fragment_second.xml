@@ -70,21 +70,24 @@
 <androidx.cardview.widget.CardView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="8dp"
     app:cardUseCompatPadding="true">
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:id="@+id/jettcard"
-        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/jettcard" />
+        android:src="@drawable/jettcard"
+            android:maxWidth="200dp"
+    android:maxHeight="200dp"
+    android:scaleType="centerInside"
+
+        android:adjustViewBounds="true" />
 
 </androidx.cardview.widget.CardView>
+
 
 
                 <com.google.android.material.imageview.ShapeableImageView
