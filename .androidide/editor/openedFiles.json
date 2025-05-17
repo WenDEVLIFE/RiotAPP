@@ -4,17 +4,47 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 5107,
-          "line": 143
+          "column": 36,
+          "index": 14564,
+          "line": 316
         },
         "start": {
-          "column": 0,
-          "index": 5107,
-          "line": 143
+          "column": 36,
+          "index": 14564,
+          "line": 316
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/drawable/ic_unsave.xml",
+      "selection": {
+        "end": {
+          "column": 36,
+          "index": 273,
+          "line": 7
+        },
+        "start": {
+          "column": 28,
+          "index": 265,
+          "line": 7
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/drawable/ic_saved.xml",
+      "selection": {
+        "end": {
+          "column": 36,
+          "index": 440,
+          "line": 8
+        },
+        "start": {
+          "column": 36,
+          "index": 440,
+          "line": 8
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_second.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/drawable/ic_saved.xml"
 }
