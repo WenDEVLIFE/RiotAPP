@@ -32,14 +32,14 @@ class SecondFragment : Fragment() {
         alertDialog.show()
     }
 
-    override fun onCreateView(
+override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
 ): View? {
     val view = inflater.inflate(R.layout.fragment_second, container, false)
     val dbHelper = SavedGuideDbHelper(requireContext())
 
-    // List of buttons that open URLs with character titles
+    // Buttons to open YouTube guides
     val openButtons = listOf(
         Triple(R.id.button1, "https://youtu.be/enmsXOKyhi4?si=ruXEZJSwt-dM8Vfx", "Jett"),  
         Triple(R.id.button2, "https://youtu.be/ohs4xDdumbc?si=mlGAyEnLSgwSOuWr", "Neon"),  
@@ -55,53 +55,37 @@ class SecondFragment : Fragment() {
         Triple(R.id.button12, "https://youtu.be/V2f4jaw0PfY?si=JDs-jx8Awx-v1SKM", "Astra")  
     )
 
-    // List of save buttons corresponding to the above
-    val saveButtonIds = listOf(
-        R.id.button1save,
-        R.id.button2save,
-        R.id.button3save,
-        R.id.button4save,
-        R.id.button5save,
-        R.id.button6save,
-        R.id.button7save,
-        R.id.button8save,
-        R.id.button9save,
-        R.id.button10save,
-        R.id.button11save,
-        R.id.button12save
+    val saveImageIds = listOf(
+        R.id.saveg1,
+        R.id.saveg2,
+        R.id.saveg3
     )
 
-    // Setup click listeners to open URLs
     openButtons.forEach { (buttonId, url, _) ->
         view.findViewById<Button>(buttonId).setOnClickListener {
             openExternalLink(url)
         }
     }
 
-    // Setup save buttons, update text if already saved
-    saveButtonIds.forEachIndexed { index, saveButtonId ->
-        val ( _, url, title) = openButtons[index]
-        val button = view.findViewById<Button>(saveButtonId)
+    saveImageIds.forEachIndexed { index, imageViewId ->
+        val ( _, url, title ) = openButtons[index]
+        val imageView = view.findViewById<ImageView>(imageViewId)
 
-        // Set initial text depending on saved state
-        if (dbHelper.isGuideSaved(url)) {
-            button.text = getString(R.string.fragtwo_deletesave_button)
-        } else {
-            button.text = getString(R.string.fragtwo_save_button)
-        }
+        imageView.setImageResource(
+            if (dbHelper.isGuideSaved(url)) R.drawable.ic_saved else R.drawable.ic_unsave
+        )
 
-        button.setOnClickListener {
+        imageView.setOnClickListener {
             if (dbHelper.isGuideSaved(url)) {
-                // If already saved, delete it
                 val deleted = dbHelper.deleteGuide(url)
                 if (deleted) {
-                    button.text = getString(R.string.fragtwo_save_button)
+                    imageView.setImageResource(R.drawable.ic_unsave)
                     Toast.makeText(requireContext(), "Guide deleted", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 val saved = dbHelper.saveGuide(title, url)
                 if (saved) {
-                    button.text = getString(R.string.fragtwo_deletesave_button)
+                    imageView.setImageResource(R.drawable.ic_saved)
                     Toast.makeText(requireContext(), "Guide saved", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(requireContext(), "Already saved", Toast.LENGTH_SHORT).show()
@@ -112,6 +96,5 @@ class SecondFragment : Fragment() {
 
     return view
 }
-
 
 }
