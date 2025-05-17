@@ -11,6 +11,7 @@ import android.widget.Button
 import android.app.AlertDialog
 import android.widget.Toast
 import com.example.riotgg.db.*
+import android.widget.ImageView
 
 class SecondFragment : Fragment() {
 
