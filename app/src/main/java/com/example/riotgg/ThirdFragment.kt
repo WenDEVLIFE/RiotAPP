@@ -8,6 +8,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.app.AlertDialog
+import android.widget.Toast
+import com.example.riotgg.db.*
+import android.widget.ImageView
 
 class ThirdFragment : Fragment() {
 
@@ -19,10 +23,27 @@ class ThirdFragment : Fragment() {
 
         // List of buttons and corresponding URLs
         val buttons = listOf(
-            Pair(R.id.button1, "https://youtu.be/ANzhr4QFRdQ?si=f0laFXbi2L1hmVN2"),  // League Video 1
-            Pair(R.id.button2, "https://youtu.be/-nCVD1_dyLc?si=gbJCI6r6y06mwK9k"),  // League Video 2
-            Pair(R.id.button3, "https://youtu.be/SxSsAPZBNJo?si=Ac_m1C6XF-MgPZY4")   // League Video 3
+            Triple(R.id.button1, "https://youtu.be/ANzhr4QFRdQ?si=f0laFXbi2L1hmVN2", "Garen"),  // League Video 1
+            Triple(R.id.button2, "https://youtu.be/-nCVD1_dyLc?si=gbJCI6r6y06mwK9k", "Riven"),  // League Video 2
+            Triple(R.id.button3, "https://youtu.be/SxSsAPZBNJo?si=Ac_m1C6XF-MgPZY4", "Darius")   // League Video 3
         )
+        
+        val saveImageIds = listOf(
+    R.id.saveg1,
+    R.id.saveg2,
+    R.id.saveg3,
+    R.id.saveg4,
+    R.id.saveg5,
+    R.id.saveg6,
+    R.id.saveg7,
+    R.id.saveg8,
+    R.id.saveg9,
+    R.id.saveg10,
+    R.id.saveg11,
+    R.id.saveg12,
+    R.id.saveg13,
+    R.id.saveg14
+)
 
         // Assign click listeners dynamically
         buttons.forEach { (buttonId, url) ->
@@ -30,6 +51,33 @@ class ThirdFragment : Fragment() {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
             }
         }
+        
+        saveImageIds.forEachIndexed { index, imageViewId ->
+        val ( _, url, title ) = openButtons[index]
+        val imageView = view.findViewById<ImageView>(imageViewId)
+
+        imageView.setImageResource(
+            if (dbHelper.isGuideSaved(url)) R.drawable.ic_saved else R.drawable.ic_unsave
+        )
+
+        imageView.setOnClickListener {
+            if (dbHelper.isGuideSaved(url)) {
+                val deleted = dbHelper.deleteGuide(url)
+                if (deleted) {
+                    imageView.setImageResource(R.drawable.ic_unsave)
+                    Toast.makeText(requireContext(), "Guide deleted", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                val saved = dbHelper.saveGuide(title, url)
+                if (saved) {
+                    imageView.setImageResource(R.drawable.ic_saved)
+                    Toast.makeText(requireContext(), "Guide saved", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(requireContext(), "Already saved", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
 
         return view
     }

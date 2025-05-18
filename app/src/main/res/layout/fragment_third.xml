@@ -314,7 +314,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button1"
+                                android:id="@+id/button3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -324,7 +324,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg1"
+                                android:id="@+id/saveg3"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -369,7 +369,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button2"
+                                android:id="@+id/button4"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -379,7 +379,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg2"
+                                android:id="@+id/saveg4"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -423,7 +423,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button3"
+                                android:id="@+id/button5"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -433,7 +433,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg3"
+                                android:id="@+id/saveg5"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -525,7 +525,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button1"
+                                android:id="@+id/button6"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -535,7 +535,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg1"
+                                android:id="@+id/saveg6"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -580,7 +580,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button2"
+                                android:id="@+id/button7"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -590,7 +590,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg2"
+                                android:id="@+id/saveg7"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -634,7 +634,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button3"
+                                android:id="@+id/button8"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -644,7 +644,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg3"
+                                android:id="@+id/saveg8"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -736,7 +736,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button1"
+                                android:id="@+id/button9"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -746,7 +746,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg1"
+                                android:id="@+id/saveg9"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -791,7 +791,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button2"
+                                android:id="@+id/button10"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -801,7 +801,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg2"
+                                android:id="@+id/saveg10"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -845,7 +845,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button3"
+                                android:id="@+id/button11"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -855,7 +855,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg3"
+                                android:id="@+id/saveg11"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -946,7 +946,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button1"
+                                android:id="@+id/button12"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -956,7 +956,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg1"
+                                android:id="@+id/saveg12"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -1001,7 +1001,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button2"
+                                android:id="@+id/button13"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1011,7 +1011,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg2"
+                                android:id="@+id/saveg13"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
@@ -1055,7 +1055,7 @@
                             android:gravity="center_vertical">
 
                             <android.widget.Button
-                                android:id="@+id/button3"
+                                android:id="@+id/button14"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -1065,7 +1065,7 @@
                                 android:fontFamily="@font/bebasneuefont" />
 
                             <ImageView
-                                android:id="@+id/saveg3"
+                                android:id="@+id/saveg14"
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_marginStart="8dp"
