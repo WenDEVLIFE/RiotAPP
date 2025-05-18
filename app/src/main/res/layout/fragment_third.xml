@@ -53,87 +53,185 @@
             </TableRow>
 
             <!--Top Lane Image-->
-            <TableRow
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:fillViewport="true"
+                android:scrollbars="none">
 
-                <ImageView
-                    android:id="@+id/card"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/garen"
-                    android:layout_margin="8dp"/>
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
 
-                <ImageView
-                    android:id="@+id/rivencard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/riven"
-                    android:layout_margin="8dp"/>
+                    <!-- Card 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp">
 
-                <ImageView
-                    android:id="@+id/dariuscard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/darius"
-                    android:layout_margin="8dp"/>
-            </TableRow>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
 
-            <!--top lane button-->
+                            <ImageView
+                                android:id="@+id/garencard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/garen"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
-
-                <android.widget.Button
-                    android:id="@+id/button1"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Garen"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <android.widget.Button
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                     />
+                                android:text="Garen"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button2"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Riven"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/rivencard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/riven"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Riven"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button3"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Darius"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/dariuscard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/darius"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Darius"
+                                android:fontFamily="@font/bebasneuefont" />
 
-            </TableRow>
+                            <ImageView
+                                android:id="@+id/saveg3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <!--Assassin Lane -->
             <TableRow
@@ -165,86 +263,186 @@
             </TableRow>
 
             <!--Assassin Image-->
-            <TableRow
+            
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:fillViewport="true"
+                android:scrollbars="none">
 
-                <ImageView
-                    android:id="@+id/masteryicard"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/masteryi"
-                    android:layout_margin="8dp"/>
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
 
-                <ImageView
-                    android:id="@+id/viegocard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/viego"
-                    android:layout_margin="8dp"/>
+                    <!-- Card 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp">
 
-                <ImageView
-                    android:id="@+id/nunucard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/nunu"
-                    android:layout_margin="8dp"/>
-            </TableRow>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
 
-            <!--assassin button-->
+                            <ImageView
+                                android:id="@+id/masteryicard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/masteryi"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
-
-                <android.widget.Button
-                    android:id="@+id/button4"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Master Yi"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <android.widget.Button
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Master Yi"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button5"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Viego"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
-                    android:textColor="@color/gray6"
-                    />
+                            <ImageView
+                                android:id="@+id/saveg1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
 
-                <android.widget.Button
-                    android:id="@+id/button6"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Nunu and Willump"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="@color/gold4"
+                    </LinearLayout>
+
+                    <!-- Card 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/nunucard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/nunu"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
-            </TableRow>
+                                android:text="Nunu"
+                                android:fontFamily="@font/bebasneuefont" />
+
+                            <ImageView
+                                android:id="@+id/saveg2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/viegocard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/viego"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
+                    android:textColor="@color/gray6"
+                                android:text="Viego"
+                                android:fontFamily="@font/bebasneuefont" />
+
+                            <ImageView
+                                android:id="@+id/saveg3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <!--Midlane-->
 
@@ -277,87 +475,185 @@
             </TableRow>
 
             <!--Top Lane Image-->
-            <TableRow
+               <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:fillViewport="true"
+                android:scrollbars="none">
 
-                <ImageView
-                    android:id="@+id/leblancard"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/leblanc"
-                    android:layout_margin="8dp"/>
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
 
-                <ImageView
-                    android:id="@+id/katacard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/kata"
-                    android:layout_margin="8dp"/>
+                    <!-- Card 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp">
 
-                <ImageView
-                    android:id="@+id/qiyacard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/qiyanna"
-                    android:layout_margin="8dp"/>
-            </TableRow>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
 
-            <!--top lane button-->
+                            <ImageView
+                                android:id="@+id/leblanccard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/leblanc"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
-
-                <android.widget.Button
-                    android:id="@+id/button7"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="LeBlanc"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <android.widget.Button
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="LeBlanc"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button8"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Katarina"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/katacard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/kata"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Katarina"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button9"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Qiyanna"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/qiyannacard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/qiyanna"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Qiyanna"
+                                android:fontFamily="@font/bebasneuefont" />
 
-            </TableRow>
+                            <ImageView
+                                android:id="@+id/saveg3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <!--ADC-->
 
@@ -390,87 +686,185 @@
             </TableRow>
 
             <!--Top Lane Image-->
-            <TableRow
+             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:fillViewport="true"
+                android:scrollbars="none">
 
-                <ImageView
-                    android:id="@+id/jinxcard"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/jinx"
-                    android:layout_margin="8dp"/>
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
 
-                <ImageView
-                    android:id="@+id/missforcard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/mf"
-                    android:layout_margin="8dp"/>
+                    <!-- Card 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp">
 
-                <ImageView
-                    android:id="@+id/kaisacard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/kaisa"
-                    android:layout_margin="8dp"/>
-            </TableRow>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
 
-            <!--top lane button-->
+                            <ImageView
+                                android:id="@+id/jinxcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/jinx"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
-
-                <android.widget.Button
-                    android:id="@+id/button10"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Jinx"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <android.widget.Button
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Jinx"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button12"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Miss Fortune"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/missforcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/mf"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Miss Fortune"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button13"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Kai'sa"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/kaisacard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/kaisa"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Kai'sa"
+                                android:fontFamily="@font/bebasneuefont" />
 
-            </TableRow>
+                            <ImageView
+                                android:id="@+id/saveg3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <!--Support-->
             <TableRow
@@ -502,88 +896,185 @@
             </TableRow>
 
             <!--Top Lane Image-->
-            <TableRow
+              <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:fillViewport="true"
+                android:scrollbars="none">
 
-                <ImageView
-                    android:id="@+id/blitzcard"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/blitz"
-                    android:layout_margin="8dp"/>
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:gravity="center_vertical">
 
-                <ImageView
-                    android:id="@+id/renatacard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/renata"
-                    android:layout_margin="8dp"/>
+                    <!-- Card 1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp">
 
-                <ImageView
-                    android:id="@+id/yuumicard"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/yuumi"
-                    android:layout_margin="8dp"/>
-            </TableRow>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
 
-            <!--top lane button-->
+                            <ImageView
+                                android:id="@+id/blitzcard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/blitz"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_vertical">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:gravity="center">
-
-                <android.widget.Button
-                    android:id="@+id/button14"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Blitzcrank"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <android.widget.Button
+                                android:id="@+id/button1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Blitzcrank"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button15"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Renata Glasc"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/renatacard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/renata"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Renata Glasc"
+                                android:fontFamily="@font/bebasneuefont" />
 
-                <android.widget.Button
-                    android:id="@+id/button16"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Yuumi"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/bebasneuefont"
-                    android:layout_marginEnd="10dp"
-                    android:backgroundTint="@color/gold4"
+                            <ImageView
+                                android:id="@+id/saveg2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Card 3 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/yuumicard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/yuumi"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/button3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/gold4"
                     android:textColor="@color/gray6"
-                    />
+                                android:text="Yuumi"
+                                android:fontFamily="@font/bebasneuefont" />
 
-            </TableRow>
+                            <ImageView
+                                android:id="@+id/saveg3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/ic_unsave"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
 
+                </LinearLayout>
+            </HorizontalScrollView>
 
         </LinearLayout>
     </ScrollView>
