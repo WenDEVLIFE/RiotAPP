@@ -4,14 +4,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/SecondFragment.kt",
       "selection": {
         "end": {
-          "column": 31,
-          "index": 384,
-          "line": 13
+          "column": 55,
+          "index": 1308,
+          "line": 40
         },
         "start": {
-          "column": 0,
-          "index": 263,
-          "line": 10
+          "column": 4,
+          "index": 1257,
+          "line": 40
         }
       }
     },
@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/ThirdFragment.kt",
       "selection": {
         "end": {
-          "column": 31,
-          "index": 384,
-          "line": 13
+          "column": 24,
+          "index": 1818,
+          "line": 40
         },
         "start": {
-          "column": 31,
-          "index": 384,
-          "line": 13
+          "column": 24,
+          "index": 1818,
+          "line": 40
         }
       }
     },
@@ -34,21 +34,6 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_third.xml",
       "selection": {
         "end": {
-          "column": 52,
-          "index": 10388,
-          "line": 220
-        },
-        "start": {
-          "column": 46,
-          "index": 10382,
-          "line": 220
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/java/com/example/riotgg/Guide/SavedGuidesActivity.kt",
-      "selection": {
-        "end": {
           "column": 0,
           "index": 0,
           "line": 0
@@ -57,24 +42,9 @@
           "column": 0,
           "index": 0,
           "line": 0
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/layout_savedguides.xml",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 1997,
-          "line": 58
-        },
-        "start": {
-          "column": 0,
-          "index": 1997,
-          "line": 58
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/layout_savedguides.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/RiotAPP/app/src/main/res/layout/fragment_third.xml"
 }
